@@ -1,3 +1,40 @@
+#logo {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+}
+
 body {
-  background-color: rgb(57, 102, 153);
+  background: radial-gradient(#023373, #011a3a);
+}
+
+nav li{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25em;
+  text-decoration-color: #7d0712;
+  background-color: #d9d7d7;
+  display: inline-block; 
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.875em;
+  font-style: underline;
+  color: #d9d7d7;
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.625em;
+  color: #d9d7d7;
+}
+
+footer li{
+  display: inline;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #d9d7d7;
 }
