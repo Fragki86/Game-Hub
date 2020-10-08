@@ -10,13 +10,16 @@ body {
   background: radial-gradient(#023373, #011a3a);
 }
 
-header, main, footer {
-  width: 90%;
+header {
+  width: 100%;
+  display: flex;
 }
 
 .logo {
-  width: 400px;
+  width: 500px;
   margin: 15px auto;
+  position: absolute;
+  display: block;
 }
 
 .current {
@@ -27,7 +30,7 @@ header, main, footer {
 nav {
   background-color: #d9d7d7;
   border-radius: 50px 50px 50px 50px;
-  margin: 50px auto;
+  margin: 380px auto 30px auto;
   }
 
 nav li {
