@@ -1,7 +1,22 @@
-#logo {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 5px;
+:root {
+  --red: #7d0712;
+  --background: radial-gradient(#023373, #011a3a);
+  --gray: #d9d7d7;
+  --font-size-p: 1.2rem;
+}
+
+body {
+  width: 100%;
+  background: radial-gradient(#023373, #011a3a);
+}
+
+header, main, footer {
+  width: 90%;
+}
+
+.logo {
+  width: 400px;
+  margin: 15px auto;
 }
 
 .current {
@@ -9,52 +24,38 @@
   font-weight: bold;
 }
 
-html {
-  background: radial-gradient(#023373, #011a3a);
-}
-
 nav {
   background-color: #d9d7d7;
   border-radius: 50px 50px 50px 50px;
-  margin-right: 150px;
-  margin-left: 600px;
-  margin-top: 0px;
-  padding-right: 0px;
-    }
+  margin: 50px auto;
+  }
 
 nav li {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.25em;
-  color: #7d0712;
+  font-size: 1.1rem;
   display: inline-block;
-  padding-right: 50px;
-    }
+  padding-right: 100px;
+  }
 
-.home-page {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3.5em;
-  font-style: underline;
-  color: #d9d7d7;
-  text-decoration: underline;
+nav a {
+  text-decoration: none;
+  color:  #7d0712
 }
 
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.625em;
+  font-size: 1.2rem;
   color: #d9d7d7;
   font-weight: 300;
-}
-
-p a {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.625;
-  font-weight: 600;
-  text-decoration: underline;
-  color: #d9d7d7;
 }
 
 footer li {
   display: inline-block;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-right: 30px;
+}
+
+footer a {
+  text-decoration: none;
   color: #d9d7d7;
 }
