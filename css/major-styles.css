@@ -21,8 +21,13 @@ header {
 }
 
 footer {
-  margin-left: 75px;
-}
+  width: 85%;
+  margin-top: 25px;
+  margin-left: 125px;
+  border-top: solid #d9d7d7;
+  border-width: thin;
+  text-align: left;
+  }
 
 .logo {
   width: 105%;
@@ -37,12 +42,14 @@ footer {
 
 .prof-name {
   width: 9%;
+  min-width: 140px;
   height: 20px;
   background:  #d9d7d7;
-  margin: 10px 10px 0px;
+  margin: 18px 10px 0px;
   border-radius: 50px 50px 50px 50px;
-  padding-top: 12px;
+  padding-bottom: 2px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  color: #7d0712
 }
 
 .prof-pic {
@@ -62,7 +69,7 @@ nav {
   min-width: 1050px;
   background-color: #d9d7d7;
   border-radius: 50px 50px 50px 50px;
-  margin: 0 auto 10px auto;  
+  margin: 0 125px 10px auto;  
 }
 
 nav li {
@@ -78,17 +85,23 @@ nav a {
 }
 
 p {
+  width: 90%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
   color: #d9d7d7;
   font-weight: 300;
-  margin-left: 80px;
+  margin-left: 125px;
 }
 
-footer li {
+footer ul {
+  padding-left: 0%;
+}
+
+footer li { 
   display: inline-block;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-right: 30px;
+  
 }
 
 footer a {
