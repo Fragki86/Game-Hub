@@ -1,5 +1,5 @@
 .join {
-    margin: 20 auto 10 auto;
+    width: 90%;
     border-radius: 12px 12px 12px 12px;
     border: none;
     background: linear-gradient(#7d0712, #3f0409);
@@ -8,4 +8,11 @@
     width: 270px;
     height: 70px;
     color:  #d9d7d7;
+    cursor: pointer;
+    box-shadow: 0 0 10px #2A363B;
+    text-align: center;
+}
+
+.join:hover {
+    background: linear-gradient(#DC0015, #3F0409)
 }
