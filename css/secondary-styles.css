@@ -1,0 +1,25 @@
+.cb4-img{
+    width: 40%;
+    margin-left: 125px;
+    margin-top: 20px;
+}
+
+.cb4-tit {
+    position: absolute;
+    left: 850px;
+    top: 550px;
+    border-bottom: solid  #d9d7d7;
+    border-width: thin;
+    color: #d9d7d7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.cb4-des {
+    position: absolute;
+    left: 725px;
+    top: 600px;
+
+
+}
