@@ -7,9 +7,9 @@
       content="This is a page about selling and buying mostly used video-games"
     />
     <meta name="viewport" content="width=device-width, initial-scale:1" />
-    <link href="css/major-styles.css" rel="stylesheet" />
-    <link href="css/secondary-styles.css" rel="stylesheet" />
-    <link href="css/buttons.css" rel="stylesheet" />
+    <link href="../css/major-styles.css" rel="stylesheet" />
+    <link href="../css/secondary-styles.css" rel="stylesheet" />
+    <link href="../css/buttons.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
@@ -35,10 +35,11 @@
       <img src="../images/ezio-big.jpg" />
     </a>
     <h2>Available platforms</h2>
-    <label><input type="checkbox" />PC</label>
-    <label><input type="checkbox" />Playstation</label>
-    <label><input type="checkbox" />Xbox</label>
-
+    <div class="checkbox">
+      <input type="checkbox" name="PC" value="PC" id="PC" /><label for="PC">PC</label>
+      <input type="checkbox" name="Playstation" value="Playstation" id="Playstation" /><label for="Playstation">Playstation</label>
+      <input type="checkbox" name="Xbox" value="Xbox" id="Xbox" /><label for="Xbox">Xbox</label>
+    </div>
     <h2>Description</h2>
     <p>
       Enter the history books as the legendary master assassin Ezio Auditore da

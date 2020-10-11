@@ -7,9 +7,9 @@
       content="This is a page about selling and buying mostly used video-games"
     />
     <meta name="viewport" content="width=device-width, initial-scale:1" />
-    <link href="css/major-styles.css" rel="stylesheet" />
-    <link href="css/secondary-styles.css" rel="stylesheet" />
-    <link href="css/buttons.css" rel="stylesheet" />
+    <link href="../css/major-styles.css" rel="stylesheet" />
+    <link href="../css/secondary-styles.css" rel="stylesheet" />
+    <link href="../css/buttons.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
@@ -42,22 +42,33 @@
     <p>Rating: 5.0/5.0</p>
 
     <h2>Payment & Shipping Information</h2>
-    <form>
-      <label>Name on card<input name="name on card" /></label>
-      <label>Card Number<input name="card number" /></label>
-      <label>Exp. date<input name="expiration date" /></label>
-      <label>CVV<input name="cvv" /></label>
-      <label>Card type <input name="card type" /></label>
-      <label><input type="radio" />Visa</label>
-      <label><input type="radio" />Mastercard</label>
-      <label><input type="radio" />American Express</label>
-      <label><input type="radio" />PayPal</label>
-      <label>Email<input name="email" /></label>
-      <label>Address<input name="address" /></label>
-      <label>City/Town<input name="city/town" /></label>
-      <label>PO Code<input name="po code" /></label>
-    </form>
-    <button>Check Out</button>
+    <div class="payment-form">
+      <form>
+        <legend>Payment</legend>
+        <label for="name-on-card">Name on card</label>
+        <input type="text" name="name-on-card" id="name-on-card">
+        <label for="card-number">Card Number</label>
+        <input type="text" name="card-number" id="card-number">
+        <label for="expiration-date">Exp. date</label>
+        <input type="date" name="expiration-date" id="expiration-date">
+        <label for="cvv">CVV</label>
+        <input type="text" name="cvv" id="cvv">
+        <label>Card type</label>
+        <input type="radio" name="card" value="visa" id="visa" /><label for="visa">Visa</label>
+        <input type="radio" name="card" value="mastercard" id="mastercard" /><label for="mastercard">Mastercard</label>
+        <input type="radio" name="card" value="american-express" id="american-express"/><label for="american-express">American Express</label>
+        <input type="radio" name="card" value="paypal" id="paypal"/><label for="paypal">PayPal</label>
+        <legend>Shipping Information</legend>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address">
+        <label for="city-town">City - Town</label>
+        <label for="po-code">PO Code</label>
+        <input type="text" name="po-code" id="po-code">
+      </form>
+    </div>
+    <button class="checkout">Check Out</button>
     <h3>NOK 99,00</h3>
 
     <h2>Latest News</h2>
