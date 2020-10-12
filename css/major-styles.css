@@ -20,23 +20,16 @@ header {
   text-align: center;
 }
 
-footer {
-  width: 85%;
-  margin-top: 25px;
-  margin-left: 125px;
-  border-top: solid #d9d7d7;
-  border-width: thin;
-  text-align: left;
-  }
 
 .logo {
   width: 105%;
-  margin: 10px auto 0 auto;
+  margin: 20px auto 0 auto;
 }
 
+ /* -- Conrol Panel -- */
 .ctr-panel {
   display: flex;
-  width: 92.5%;
+  width: 82.5%;
   justify-content: flex-end;  
 }
 
@@ -59,17 +52,15 @@ footer {
 .mes-pic {
   margin-right: 5px;
 }
-.current {
-  text-decoration: underline;
-  font-weight: bold;
-}
 
+
+/* -- Navigation Bar -- */
 nav {
-  width: 85%;
+  width: 65%;
   min-width: 1050px;
   background-color: #d9d7d7;
   border-radius: 50px 50px 50px 50px;
-  margin: 0 125px 10px auto;  
+  margin: 0 auto 10px auto;  
 }
 
 nav li {
@@ -84,6 +75,40 @@ nav a {
   padding-right: 100px;
 }
 
+.search {
+  background: white;
+  border-radius: 50px;
+  border-color: #7d0712;
+  border-width: thin;
+  font-size: 0.95rem;
+  font-style: italic;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  margin: 3px 0px 3px auto;  
+  width: 200px;
+  text-align: left;
+  box-shadow: inset 0px 0px 3px;
+}
+
+.search-icon {
+ position: absolute;
+ margin-left: 25px;
+ margin-top: 3px;
+ width: 0.9%; 
+}
+
+.cart {
+  position: absolute;
+  top: 525px;
+}
+
+.current {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+/* -- Paragraph Styling  -- */
 p {
   width: 90%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -92,6 +117,17 @@ p {
   font-weight: 300;
   margin-left: 125px;
 }
+
+
+/* -- Footer --*/
+footer {
+  width: 85%;
+  margin-top: 25px;
+  margin-left: 125px;
+  border-top: solid #d9d7d7;
+  border-width: thin;
+  text-align: left;
+  }
 
 footer ul {
   padding-left: 0%;

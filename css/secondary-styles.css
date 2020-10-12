@@ -1,12 +1,16 @@
+.cb4 {
+    display: flex;
+}
+
 .cb4-img{
-    width: 40%;
+    width: 50%;
     margin-left: 125px;
     margin-top: 20px;
 }
 
 .cb4-tit {
     position: absolute;
-    left: 850px;
+    left: 870px;
     top: 550px;
     border-bottom: solid  #d9d7d7;
     border-width: thin;
@@ -18,8 +22,6 @@
 
 .cb4-des {
     position: absolute;
-    left: 725px;
+    left: 745px;
     top: 600px;
-
-
 }
