@@ -1,0 +1,31 @@
+.cb4-tit {
+    position: absolute;
+    left: 870px;
+    top: 550px;
+    border-bottom: solid  #d9d7d7;
+    border-width: thin;
+    color: #d9d7d7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.cb4-des {
+    position: absolute;
+    left: 745px;
+    top: 600px;
+}
+
+
+<section class="cb4">
+<div>
+  <img src="images/cb4.jpg" alt="Crash Bandicoot 4: It's about time cover" class="cb4-img">
+</div>
+<div class="cb4-main">
+  <h2 class="cb4-tit">Crash Bandicoot 4: It's about time</h2>
+  <div class="cb4-des">
+  <p>An old time classic is making a come back with a whole new story and new characters, along with fantastic graphics for the new generation of consoles</p>
+  <p>Pre-order it from the Game Hub and gain 150 points as a gift, so you can trade them as you want.</p>
+ <p>Available for Playstation 4 and Xbox</p>
+</div>
+</section>
