@@ -1,0 +1,305 @@
+
+
+/* --------------------------- Global Styles --------------------------- */
+:root {
+  --red: #7d0712;
+  --background: radial-gradient(#023373, #011a3a);
+  --gray: #d9d7d7;
+  --font-size-p: 1.2rem;
+}
+
+body {
+  width: 100%;
+  background: radial-gradient(#023373, #011a3a);
+  
+}
+
+main {
+  width: 100%;
+  }
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+
+.logo {
+  width: 105%;
+  margin: 20px auto 0 auto;
+}
+
+ /* -- Conrol Panel -- */
+.ctr-panel {
+  display: flex;
+  width: 82.5%;
+  justify-content: flex-end;  
+}
+
+.prof-name {
+  width: 9%;
+  min-width: 140px;
+  height: 20px;
+  background:  #d9d7d7;
+  margin: 18px 10px 0px;
+  border-radius: 50px 50px 50px 50px;
+  padding-bottom: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  color: #7d0712
+}
+
+.prof-pic {
+  margin-right: 3px;
+}
+
+.mes-pic {
+  margin-right: 5px;
+}
+
+
+/* -- Navigation Bar -- */
+nav {
+  width: 70%;
+  min-width: 1500px;
+  background-color: #d9d7d7;
+  border-radius: 50px 50px 50px 50px;
+  margin: 0 auto 10px auto;  
+}
+
+nav li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #7d0712;
+  padding-right: 100px;
+}
+
+.search {
+  background: white;
+  border-radius: 50px;
+  border-color: #7d0712;
+  border-width: thin;
+  font-size: 0.95rem;
+  font-style: italic;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  margin: 3px 0px 3px auto;  
+  width: 200px;
+  text-align: left;
+  box-shadow: inset 0px 0px 3px;
+}
+
+.search-icon {
+ position: absolute;
+ margin-left: 25px;
+ margin-top: 3px;
+ width: 0.9%; 
+}
+
+.cart {
+  position: absolute;
+  top: 525px;
+  margin: 3px 0px 4px 2px;
+  width: 1.2%;
+}
+
+.current {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* -- Navigation Mobile -- */
+#nav-burger {
+  display: flex;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ #nav-burger {
+  flex-direction: column;
+}
+
+/* -- Paragraph Styling  -- */
+p {
+  width: 90%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  color: #d9d7d7;
+  font-weight: 300;
+  
+}
+
+
+/* -- Footer --*/
+footer {
+  width: 85%;
+  margin-top: 25px;
+  margin-left: 125px;
+  border-top: solid #d9d7d7;
+  border-width: thin;
+  text-align: left;
+  }
+
+footer ul {
+  padding-left: 0%;
+}
+
+footer li { 
+  display: inline-block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-right: 30px;
+  
+}
+
+footer a {
+  text-decoration: none;
+  color: #d9d7d7;
+}
+
+/* --------------------------- Mobile Styles --------------------------- */
+@media only screen and (min-width:480px) {
+/* -- Navigation Mobile -- */
+#nav-burger {
+  display: none;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ #nav-burger {
+  display: block;
+}
+
+nav {
+  display: none;
+}
+
+.ctr-panel {
+  display: none;
+}
+}
+
+
+/* --------------------------- Tablet Styles --------------------------- */
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+
+}
+
+
+/* --------------------------- Desktop Styles --------------------------- */
+@media only screen and (min-width:769px) {
+/* -- Navigation Bar -- */
+nav {
+  width: 70%;
+  min-width: 1500px;
+  background-color: #d9d7d7;
+  border-radius: 50px 50px 50px 50px;
+  margin: 0 auto 10px auto;  
+}
+
+nav li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #7d0712;
+  padding-right: 100px;
+}
+
+.search {
+  background: white;
+  border-radius: 50px;
+  border-color: #7d0712;
+  border-width: thin;
+  font-size: 0.95rem;
+  font-style: italic;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  margin: 3px 0px 3px auto;  
+  width: 200px;
+  text-align: left;
+  box-shadow: inset 0px 0px 3px;
+}
+
+.search-icon {
+ position: absolute;
+ margin-left: 25px;
+ margin-top: 3px;
+ width: 0.9%; 
+}
+
+.cart {
+  position: absolute;
+  top: 525px;
+  margin: 3px 0px 4px 2px;
+  width: 1.2%;
+}
+
+.current {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+}
+
+
+
+<nav id="nav1">
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="buy-games/buy-main-page.html">Buy Games</a></li>
+          <li><a href="sell-games.html">Sell Games</a></li>
+          <li><a href="create-account.html">Create Account</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="search"><a href="search.html">Search</a> <img src="images/search.png" class="search-icon"></li>
+          <li><img src="images/cart.png" class="cart"></li>
+        </ul>
+      </nav>
+
+
+
+
+
+
+/*Crash Bandicoot 4*/
+.cb4 {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.cb4-img {
+  width: 60%;
+  flex-basis: 250px;
+  flex: 2;
+  margin-left: 335px;
+  margin-top: 10px;
+}
+
+.cb4-tit {
+  flex: 1;
+  width: 45%;
+  color: var(--gray);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border-bottom: solid var(--gray);
+  border-width: 1px;
+}
+
+.cb4-des {
+  flex: 1;
+  width: 78%;
+}
