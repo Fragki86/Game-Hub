@@ -1,3 +1,11 @@
+/* ---------------------------------- Global Secondary Styles ---------------------------------- */
+
+/* -- Crash Bandicoot 4 -- */
 .cb4-img {
-    display: none;
+  width: 90%;
+  display: flex;
+  margin: 20px auto 15px auto;
+  min-width: 200px;
+  max-width: 600px;
+  border: solid white;
 }

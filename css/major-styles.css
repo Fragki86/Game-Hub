@@ -50,6 +50,10 @@ nav {
   width: 80%;
   min-width: 150px;
   max-width: 320px;
+  border-top: solid 2px #7d0712;
+  border-right: solid 2px #7d0712;
+  border-left: solid 2px #7d0712;
+  border-radius: 15px 15px 0px 0px;
 }
 
 .prof-pic-2 {
@@ -79,7 +83,7 @@ nav {
 
 nav a {
   font-size: 1rem;
-  font-weight: 550;
+  font-weight: 450;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
   color:  #7d0712;
@@ -102,6 +106,13 @@ nav li {
   list-style: none;
   align-items: center;
   background: #D9D7D7;
+  border-right: solid 2px #7d0712;
+  border-left: solid 2px #7d0712;
+}
+
+.set {
+  border-bottom: solid 2px #7d0712;
+  border-radius: 0px 0px 15px 15px;
 }
 
 .ham {
@@ -112,8 +123,23 @@ nav li {
   color: #fff;
   background-color:  #7d0712;
   cursor: pointer;
+  margin-left: 10px;
 }
 
+.search-mobile {
+  float: right;
+  padding-right: 20px;
+  left: 700px;
+  top: 100px;
+  max-width: 42px;
+  min-width: 42px;
+  display: block;
+  border: solid white;
+}
+.current {
+  text-decoration: none;
+  font-weight: 750;
+}
 
 /* --------------------------- Tablet Styles --------------------------- 
 @media only screen and (min-width:481px) and (max-width:768px) {
