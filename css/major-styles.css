@@ -19,9 +19,8 @@ header {
 }
 
 .logo {
-  position: relative;
-  width: 400px;
-  margin: auto auto;
+  width: 100%;
+  margin-left: px;
 }
 
 .ham {
@@ -80,6 +79,10 @@ nav li {
 /* --------------------------- Desktop Styles --------------------------- */
 @media only screen and (min-width:769px) {
 /* -- Navigation Bar -- */
+.logo {
+  display: inline;
+}
+
 nav {
   width: 60%;
   min-width: 1500px;
