@@ -26,6 +26,34 @@ header {
   margin: 0 auto;
 }
 
+footer {
+  width: 90%;
+  margin-top: 25px;
+  margin-left: 10px;
+  border-top: solid #d9d7d7;
+  border-width: thin;
+  text-align: left;
+  }
+
+footer ul {
+  padding-left: 0%;
+}
+
+footer li { 
+  display: inline-block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  
+}
+
+footer a {
+  text-decoration: none;
+  color: #d9d7d7;
+  font-size: 0.8rem;
+}
+
+
 /* -- Navigation Menu --*/
 nav {
   display: none;
@@ -145,12 +173,28 @@ nav li {
 
 /* Headers & Paragraphs -- */
 
-h2 {
-  width: 80%;
+.latest-entries{
+  width: 75%;
+  max-width: 140px;
+  margin: 30px auto 20px auto;
+  text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #d9d7d7;
   font-weight: 500;
   border-bottom: solid 2px #d9d7d7;
+  font-size: 1.4rem;
+}
+
+.coming-soon {
+  width: 75%;
+  max-width: 140px;
+  margin: 30px auto 20px auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #d9d7d7;
+  font-weight: 500;
+  border-bottom: solid 2px #d9d7d7;
+  font-size: 1.4rem;
 }
 
 p {
@@ -159,7 +203,7 @@ p {
   font-size: 0.9rem;
   color: #d9d7d7;
   font-weight: 300;
-  
+  margin-left: 15px;
 }
 
 
