@@ -6,7 +6,7 @@
   display: flex;
   margin: 20px auto 15px auto;
   min-width: 200px;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .cb4-tit {
@@ -19,4 +19,89 @@
   font-weight: 500;
   border-bottom: solid 2px #d9d7d7;
   font-size: 1.4rem;
+}
+
+/* -- Assassin's Creed: Ezio Collection -- */
+.ac-col-carousel {
+  width: 90%;
+  display: flex;
+  margin: 20px auto 15px auto;
+  min-width: 200px;
+  max-width: 400px;  
+}
+
+
+/* -- Call of Duty: Modern Warfare -- */
+.cod-carousel {
+  width: 90%;
+  display: flex;
+  margin: 20px auto 15px auto;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+
+/* -- Red Dead Redemption: 2 -- */
+.rdr-carousel {
+  width: 90%;
+  display: flex;
+  margin: 20px auto 15px auto;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+/* -- Assassin's Creed: Valhalla -- */
+.ac-val-carousel {
+  width: 90%;
+  display: flex;
+  margin: 20px auto 15px auto;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+
+/* -- Ghost of Tsushima -- */
+.ghost-carousel {
+  width: 90%;
+  display: flex;
+  margin: 20px auto 15px auto;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.ghost-vertical {
+    display: flex;
+    margin: 0px auto 0px auto;
+}
+
+/* -- "Buy" Section Images -- */
+.img-buy-1 { 
+  width: 90%;
+  display: flex;
+  margin: 10px auto 0px auto;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.img-buy-2 { 
+  width: 80%;
+  display: flex;
+  margin: 0px auto 0px auto;
+  min-width: 200px;
+  max-width: 400px;
+  background-color: #d9d7d7;
+  padding: 20px 55px 20px 20px;
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 20px auto 0px auto;
+  width: 80%;
+  min-width: 100px;
+  max-width: 400px;
+  background-color: #d9d7d7;
+  color: #7d0712
 }
