@@ -162,30 +162,6 @@ footer a {
   color: #d9d7d7;
 }
 
-/* --------------------------- Mobile Styles --------------------------- */
-@media only screen and (min-width:480px) {
-/* -- Navigation Mobile -- */
-#nav-burger {
-  display: none;
-}
-
-#hamburger-menu {
-  display: none;
-}
-
-#hamburger-menu:checked ~ #nav-burger {
-  display: block;
-}
-
-nav {
-  display: none;
-}
-
-.ctr-panel {
-  display: none;
-}
-}
-
 
 /* --------------------------- Tablet Styles --------------------------- */
 @media only screen and (min-width:481px) and (max-width:768px) {
@@ -255,51 +231,55 @@ nav a {
 
 
 
-<nav id="nav1">
-        <ul>
-          <li><a href="index.html" class="current">Home</a></li>
-          <li><a href="buy-games/buy-main-page.html">Buy Games</a></li>
-          <li><a href="sell-games.html">Sell Games</a></li>
-          <li><a href="create-account.html">Create Account</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li class="search"><a href="search.html">Search</a> <img src="images/search.png" class="search-icon"></li>
-          <li><img src="images/cart.png" class="cart"></li>
-        </ul>
-      </nav>
-
-
-
-
-
-
-/*Crash Bandicoot 4*/
-.cb4 {
+/* -- Checkbox --*/
+.checkbox {
   display: flex;
-  justify-content: space-between;
-  width: 95%;
+  flex-direction: column;
+  background-color: #d9d7d7;
+  width: 70%;
+  min-width: 00px;
+  max-width: 400px;
+  font-family: 'Montserrat', sans-serif;;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-align: left;
+  color: #7d0712;
+  margin: 0px auto 0px auto;
+  padding: 0px 30px;
 }
 
-.cb4-img {
-  width: 60%;
-  flex-basis: 250px;
-  flex: 2;
-  margin-left: 335px;
-  margin-top: 10px;
-}
 
-.cb4-tit {
-  flex: 1;
-  width: 45%;
-  color: var(--gray);
-  text-align: center;
+
+h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.4rem;
-  font-weight: 400;
-  border-bottom: solid var(--gray);
-  border-width: 1px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+  color: #d9d7d7;
 }
 
-.cb4-des {
-  flex: 1;
-  width: 78%;
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 20px auto 0px auto;
+  padding-top: 20px;
+  padding: 20px 30px 10px 30px;
+  width: 70%;
+  min-width: 100px;
+  max-width: 400px;
+  background-color: #d9d7d7;
+  color: #7d0712
+}
+
+.img-buy-2 { 
+  width: 70%;
+  display: flex;
+  margin: 0px auto 0px auto;
+  min-width: 100px;
+  max-width: 400px;
+  background-color: #d9d7d7;
+  padding: 10px 30px 10px 30px;
 }

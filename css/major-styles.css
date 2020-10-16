@@ -32,7 +32,7 @@ footer {
   margin-left: 10px;
   border-top: solid #d9d7d7;
   border-width: thin;
-  text-align: left;
+  text-align: center;
   }
 
 footer ul {
@@ -109,6 +109,13 @@ nav {
   font-size: 0.8rem;
   color: #7d0712;
   text-align: center;
+}
+
+nav {
+  position: absolute;
+  width: 80%;
+  min-width: 150px;
+  max-width: 320px;
 }
 
 nav a {
@@ -206,20 +213,9 @@ p {
   margin-left: 15px;
 }
 
-h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 600;
-  font-size: 1.3rem;
-  text-align: center;
-  margin: 20px auto 0px auto;
-  width: 90%;
-  min-width: 100px;
-  max-width: 400px;
-  background-color: #d9d7d7;
-  color: #7d0712
-}
 
-h2 {
+
+h2.choose {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
@@ -231,6 +227,7 @@ h2 {
 .h2-specific {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 .titles-links {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
