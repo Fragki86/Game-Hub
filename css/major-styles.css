@@ -28,8 +28,7 @@ header {
 
 footer {
   width: 90%;
-  margin-top: 25px;
-  margin-left: 10px;
+  margin: 10px auto 0px auto;
   border-top: solid #d9d7d7;
   border-width: thin;
   text-align: center;
@@ -37,6 +36,7 @@ footer {
 
 footer ul {
   padding-left: 0%;
+  margin-top: 2px;
 }
 
 footer li { 
@@ -50,7 +50,7 @@ footer li {
 footer a {
   text-decoration: none;
   color: #d9d7d7;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 
