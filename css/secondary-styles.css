@@ -118,7 +118,7 @@
 }
 
 .h2-platform-select {
-  grid-column 1;
+  grid-column: 1;
   grid-row: 3;
   font-size: 0.8rem;
   text-decoration: underline;
