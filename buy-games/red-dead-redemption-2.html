@@ -56,17 +56,17 @@
         </nav>
       </section>
     </header>
-    <h1>Red Dead Redemption 2</h1>
-    <a>
-      <img src="../images/rdr-big.jpg" />
-    </a>
-    <h2>Available platforms</h2>
-    <label><input type="checkbox" />PC</label>
-    <label><input type="checkbox" />Playstation</label>
-    <label><input type="checkbox" />Xbox</label>
-
-    <h2>Description</h2>
-    <p>
+    <div class="grid">
+    <h1 class="h1-title">Red Dead Redemption 2</h1>
+    <img src="../images/rdr-big.jpg" class="img-buy-2" />
+         <h2 class="h2-platform-select">Available Platforms</h2>
+     <div class="checkbox">
+      <label for="PC" class="pc"><input type="checkbox" name="PC" value="PC" id="PC" />PC</label>
+      <label for="Playstation" class="playstation"><input type="checkbox" name="Playstation" value="Playstation" id="Playstation" />Playstation</label>
+      <label for="Xbox" class="xbox"><input type="checkbox" name="Xbox" value="Xbox" id="Xbox" />Xbox</label>
+     </div>
+      <h2 class="h2-description">Description</h2>
+      <p class="p-description">
       Red Dead Redemption 2 is an epic tale of honor and loyalty at the
       beginning of the modern age. The game has received over 175 this year's
       game awards, and 250 reviewers have given the highest rating. America,
@@ -81,17 +81,20 @@
       hunt, fish and create their own story on the prairie in one of several
       specialist roles , such as bounty hunter, creamer, treasure hunter, home
       brand maker and many more.
-    </p>
-    <h3>On Sale by: Game Hub</h3>
-    <a href="../checkout/red-dead-redemption-2-payment.html">
-      <button>Buy Now</button>
-    </a>
-    <h2>NOK 89,00</h2>
-
-    <h2>Latest News</h2>
-    <p>eifaoiefoaiehfoaiehfoiasfhoeasuif</p>
+      </p>
+      <h3 class="h3-on-sale-by"><u><strong>On Sale by:</u></strong> Georgios Fragkias</h3>
+      <label for="buy-now">
+       <a href="../checkout/red-dead-redemption-2-payment.html" class="button-text"><button class="buy-now">Buy Now</button></a>
+      </label>
+      <h2 class="h2-price">NOK 89,00</h2>
+    </div>
   </body>
   <footer>
+    <div class="social-media">
+      <a href="#"><img src="../images/twitter.png" class="twitter-icon"></a>
+      <a href="#"><img src="../images/instagram.png" class="instagram-icon"></a>
+      <a href="#"><img src="../images/facebook.png" class="facebook-icon"></a>
+    </div>
     <ul>
       <li><a href="../about-us.html">About Us</a></li>
       <li><a href="../privacy-policy.html">Privacy Policy</a></li>

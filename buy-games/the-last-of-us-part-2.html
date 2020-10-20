@@ -56,17 +56,17 @@
         </nav>
       </section>
     </header>
-    <h1>The Last of Us: Part II</h1>
-    <a>
-      <img src="../images/last-big.jpg" />
-    </a>
-    <h2>Available platforms</h2>
-    <label><input type="checkbox" />PC</label>
-    <label><input type="checkbox" />Playstation</label>
-    <label><input type="checkbox" />Xbox</label>
-
-    <h2>Description</h2>
-    <p>
+    <div class="grid">
+      <h1 class="h1-title">The Last of Us: Part II</h1>
+        <img src="../images/last-big.jpg" class="img-buy-2" />
+         <h2 class="h2-platform-select">Available Platforms</h2>
+     <div class="checkbox">
+      <label for="PC" class="pc"><input type="checkbox" name="PC" value="PC" id="PC" />PC</label>
+      <label for="Playstation" class="playstation"><input type="checkbox" name="Playstation" value="Playstation" id="Playstation" />Playstation</label>
+      <label for="Xbox" class="xbox"><input type="checkbox" name="Xbox" value="Xbox" id="Xbox" />Xbox</label>
+     </div>
+      <h2 class="h2-description">Description</h2>
+      <p class="p-description">
       Five years have passed… After a life-threatening journey across a
       pandemic-ravaged United States, Ellie and Joel settle in Wyoming. There
       they find stability in a bustling society, despite the fact that infected
@@ -74,24 +74,26 @@
       peace, Ellie sets out to hold the culprits accountable, but at the same
       time she is confronted with the physical and emotional consequences of her
       actions.
-    </p>
-    <p>
+      <br>
       • Let yourself be engrossed in an emotional story that will make you
       re-evaluate your perception of right and wrong. Embark on an adventure in
       a beautiful but dangerous world filled with peaceful mountains and
       overgrown ruins. Experience an action-packed survival game with melee
       combat, agile moves and dynamic sneaking.
-    </p>
-    <h3>On Sale by: Game Hub</h3>
-    <a href="../checkout/the-last-of-us-part-2-payment.html">
-      <button>Buy Now</button>
-    </a>
-    <h2>NOK 119,00</h2>
-
-    <h2>Latest News</h2>
-    <p>eifaoiefoaiehfoaiehfoiasfhoeasuif</p>
+      </p>
+      <h3 class="h3-on-sale-by"><u><strong>On Sale by:</u></strong> Georgios Fragkias</h3>
+      <label for="buy-now">
+        <a href="../checkout/the-last-of-us-part-2-payment.html" class="button-text"><button class="buy-now">Buy Now</button></a>
+      </label>
+      <h2 class="h2-price">NOK 119,00</h2>
+    </div>
   </body>
   <footer>
+    <div class="social-media">
+      <a href="#"><img src="../images/twitter.png" class="twitter-icon"></a>
+      <a href="#"><img src="../images/instagram.png" class="instagram-icon"></a>
+      <a href="#"><img src="../images/facebook.png" class="facebook-icon"></a>
+    </div>
     <ul>
       <li><a href="../about-us.html">About Us</a></li>
       <li><a href="../privacy-policy.html">Privacy Policy</a></li>
