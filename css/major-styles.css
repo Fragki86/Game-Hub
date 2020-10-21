@@ -1,5 +1,3 @@
-
-
 /* --------------------------- Global Styles --------------------------- */
 
 /* -- Basic -- */
@@ -7,6 +5,7 @@
   --red: #7d0712;
   --background: radial-gradient(#023373, #011a3a);
   --blue:  #011a3a;
+  --light-blue: #adcae3;
   --gray: #d9d7d7;
   --shadow-color: #2A363B;
   --button-red: linear-gradient(#7d0712, #3f0409);
@@ -16,7 +15,7 @@
 body {
   width: 100%;
   background: var(--background);
-  overflow-x: ;
+  overflow-x: hidden;
 }
 
 header {
@@ -179,6 +178,7 @@ nav li {
   position: absolute;
   right: 0px;
   top: 220px;
+  margin-right: 10px;
   max-width: 43px;
   min-width: 43px;
   display: block;
