@@ -54,37 +54,67 @@
         </nav>
       </section>
     </header>
-    <h1>Halo 5: Guardians</h1>
-    <a>
-      <img src="../images/halo.jpg" alt="Halo 5: Guardians" />
-    </a>
-
-    <h2>Seller's Info</h2>
-    <p>Name: Georgios Fragkias</p>
-    <p>Email: geo.fragkias@gmail.com</p>
-    <p>Sales: 21</p>
-    <p>Rating: 5.0/5.0</p>
-
-    <h2>Payment and Shipping Information</h2>
-    <form>
-      <label>Name on card<input name="name on card" /></label>
-      <label>Card Number<input name="card number" /></label>
-      <label>Exp. date<input name="expiration date" /></label>
-      <label>CVV<input name="cvv" /></label>
-      <label>Card type <input name="card type" /></label>
-      <label><input type="radio" />Visa</label>
-      <label><input type="radio" />Mastercard</label>
-      <label><input type="radio" />American Express</label>
-      <label><input type="radio" />PayPal</label>
-      <label>Email<input name="email" /></label>
-      <label>Address<input name="address" /></label>
-      <label>City/Town<input name="city/town" /></label>
-      <label>PO Code<input name="po code" /></label>
-    </form>
-
-    <button>Check Out</button>
-    <h3>NOK 119,00</h3>
-
+    <div class="payment-top-part">
+      <h1 class="h1-title-p">Halo 5: Guardians</h1>
+      <img src="../images/halo.jpg" alt="Halo 5: Guardians" class="img-buy-2-p"/>
+      <h2 class="h2-sellers-info">Seller's Info:</h2>
+      <div class="p-sellers-info">
+        <p class="p-pay"><span>Name:</span> Georgios Fragkias</p>
+        <p class="p-pay"><span>Email:</span> geo.fragkias@gmail.com</p>
+        <p class="p-pay"><span>Sales:</span> 21</p>
+        <p class="p-pay"><span>Rating:</span> 5.0/5.0</p>
+      </div>
+    </div>
+    <div class="payment-main-part">
+      <h2 class="h2-pay-ship">Payment and Shipping Information</h2>
+        <form method:="POST" class="form">
+          <div>
+            <label for="name-on-card">Name on card</label>
+            <input type="text" name="name-on-card" id="name-on-card" class="form-input" required>
+          </div>
+          <div>
+            <label for="card-number">Card Number</label>
+            <input type="text" name="card-number" id="card-number" class="form-input" required>
+          </div>
+          <div>
+            <label for="expiration-date">Exp. date</label>
+            <input type="date" name="expiration-date" id="expiration-date" class="form-input" required>
+          </div>
+          <div>
+            <label for="cvv">CVV</label>
+            <input type="number" name="cvv" id="cvv" class="cvv" min="0" max="999" required>
+          </div>
+          <div>
+            <label>Card type</label>
+            <div>
+            <input type="radio" name="card" value="visa" id="visa" class="radio-button"/><label for="visa"><img src="../images/visa.png" alt="visa" class="card-png"></label>
+            <input type="radio" name="card" value="mastercard" id="mastercard" class="radio-button"/><label for="mastercard"><img src="../images/mastercard.png" alt="mastercard" class="card-png"></label>
+            </div>
+            <div>
+            <input type="radio" name="card" value="american-express" id="american-express" class="radio-button"/><label for="american-express"><img src="../images/american-express.png" alt="american express" class="card-png"></label>
+            <input type="radio" name="card" value="paypal" id="paypal" class="radio-button"/><label for="paypal"><img src="../images/paypal.png" alt="paypal" class="card-png"></label>
+            </div>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-input" required>
+          </div>
+          <div>
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" class="form-input" required>
+          </div>
+          <div>
+            <label for="city-town">City - Town</label>
+            <input type="text" name="city-town" id="city-town" class="form-input" required>
+          </div>
+          <div>
+            <label for="po-code">PO Code</label>
+            <input type="text" name="po-code" id="po-code" class="form-input" required>
+          </div>
+          <button class="checkout-button" type="submit">Check Out</button>
+          <h3 class="h3-price-p">NOK 119,00</h3>
+        </form>
+    </div>
     <section>
       <div>
        <footer>

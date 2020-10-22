@@ -14,7 +14,6 @@
   max-width: 350px;
   margin: 10px auto 20px auto;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #d9d7d7;
   font-weight: 500;
   border-bottom: solid 2px #d9d7d7;
@@ -87,7 +86,7 @@
 }
 
 
-/* -- Grid --*/
+/* -- Grid Buy Section --*/
 .grid {
   display: grid;
   grid-template-columns: 40% 1fr;
@@ -103,7 +102,6 @@
 .h1-title {
   grid-column: 1 / 3;
   grid-row: 1;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
   color: var(--red);
@@ -136,7 +134,6 @@
   grid-template-rows: repeat(3, 1fr);
   color: var(--red);
   font-size: 0.8rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .pc {
@@ -162,7 +159,6 @@
   grid-row: 3 / 10;
   width: 90%;
   color: var(--blue);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.9rem;
   border-left: solid 1px var(--blue);
 
@@ -173,7 +169,6 @@
   grid-row: 3 / 9;
   width: 85%;
   color: var(--blue);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.6rem;
   text-align: left;
   padding-bottom: 20px;
@@ -184,7 +179,6 @@
   grid-column: 1;
   grid-row: 5;
   color: var(--red);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: 0.8rem;
   padding-left: 5px;
@@ -194,7 +188,6 @@
   grid-column: 1;
   grid-row: 7;
   color:var(--red);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
   margin-top: 0px;
@@ -247,7 +240,6 @@
 .h1-title-p {
   grid-column: 1 / 5;
   grid-row: 1;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
   color: var(--red);
@@ -267,7 +259,6 @@
   grid-row: 3;
   color: var(--red);
   font-size: 0.9rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
   text-decoration: underline;
   text-align: center;
@@ -278,11 +269,12 @@
   display: grid;
   grid-column: 2/4;
   grid-row: 4;
-  width::80%;
+  width:80%;
   min-width: 100px;
   max-width: 200px;
   grid-template-columns: 30% 70%;
   grid-template-rows: auto;
+  margin: 0px auto;
   grid-gap: 0px;
   padding-bottom: 20px;
   border-bottom: solid 2px var(--blue);
@@ -292,7 +284,6 @@
   grid-column: 1 / 3;
   color: var(--blue);
   font-size: 0.6rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   text-align: left;
   margin-top: 0px;
@@ -301,7 +292,6 @@
 
 .p-pay span{
   font-size: 0.6rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
   color: var(--red);
   grid-column: 1 / 2;
@@ -311,8 +301,8 @@
 .payment-main-part {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 3px;
-  grid-template-rows: 10% 90%;
+  row-gap: 5px;
+  grid-template-rows: 5% 95%;
   width: 90%;
   background: var(--gray);
   margin: 0px auto 30px auto;
@@ -327,9 +317,8 @@
   width: 90%;
   min-width: 250px;
   color: var(--blue);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.8rem;
-  padding-left: 15px;
+  padding-left: 25px;
 }
 
 form {
@@ -340,34 +329,33 @@ form {
   text-align: left;
   background-color: var(--light-blue);
   margin: 0px auto 10px auto;
+  padding-bottom: 10px;
   border: solid 1px #707070;
 }
 
 form label {
   color: var(--blue);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 15px;
+  font-size: 0.7rem;
 
 }
 
 .form-input {
   display: block;
-  box-shadow: 0px 0px 1px 1px #707070;
+  box-shadow: 0px 0px 2px #707070;
   margin-left: 15px;
-  width: 60%;
-
+  width: 80%;
+  border: solid 1px #707070;
+  border-radius: 3px;
 }
 
-.exp-date-box {
-  display: inline;
-  width:40%
-}
-
-.ccv-box {
-  display: inline;
-  box-shadow: 0px 0px 1px 1px #707070;
+.cvv {
+  display: block;
+  box-shadow: 0px 0px 2px #707070;
   margin-left: 15px;
-  width: 15%;
+  width: 20%;
+  border: solid 1px #707070;
+  border-radius: 3px;
 }
 
 .radio-button {
@@ -384,7 +372,6 @@ form label {
   grid-column: 1;
   grid-row: 11;
   color:var(--red);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
   margin-top: 0px;
