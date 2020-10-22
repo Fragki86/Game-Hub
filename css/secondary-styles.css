@@ -414,17 +414,20 @@ form label {
 .sell-game {
   width: 90%;
   background-color: var(--gray);
-  margin: 20px auto 15px auto;
+  margin: 20px auto 50px auto;
   border-radius: 10px 10px 10px 10px;
 }
 
 .sell-game h1 {
-  width: 50%;
+  width: 80%;
   margin: 10px auto 0px auto;
+  min-width: 50px;
+  max-width: 200px;
   text-align: center;
   padding-top: 10px;
   border-bottom: solid 2px var(--red);
   color: var(--blue);
+  font-size: 1.4rem;
 }
 
 .sell-game p {
@@ -436,4 +439,112 @@ form label {
   font-weight: 450;;
 }
 
-.sell-game-form
+.sell-game-form {
+  width: 80%;
+  background-color: var(--gray);
+  border: none;
+}
+
+.sell-game-form label {
+  color: var(--blue);
+  padding: 10px 0px 3px 3px;
+  font-size: 0.7rem;
+}
+
+.sell-game-form input, select, textarea {
+  display: block;
+  box-shadow: 0px 0px 2px #707070;
+  border: solid 1px #707070;
+  border-radius: 3px;
+}
+
+.put-on-sale-button {
+  margin: 20px auto 0px auto;
+  cursor: pointer;
+  border-radius: 12px 12px 12px 12px;
+  border: none;
+  background: var(--button-red);    
+  box-shadow: 0 0 10px var(--shadow-color);
+  width: 70%;
+  min-width: 80px;
+  max-width: 350px;
+  height: 40px;
+  align-items: center;
+  color: var(--gray);
+  font-family: "Montserrat", arial;
+  font-size: 0.8rem;
+  align-items: center;
+}
+/*--------------------------------------------------------------*/
+
+
+
+/* -- Sell-Game --*/
+.create-account {
+  width: 90%;
+  background-color: var(--gray);
+  margin: 20px auto 50px auto;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.create-account h1 {
+  width: 80%;
+  margin: 10px auto 0px auto;
+  min-width: 0px;
+  max-width: 250px;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom: solid 2px var(--red);
+  color: var(--blue);
+  font-size: 1.4rem;
+}
+
+.create-account p {
+  color: var(--blue);
+}
+
+.create-account span {
+  font-size: 1rem;
+  font-weight: 450;;
+}
+
+.create-account-form {
+  width: 80%;
+  background-color: var(--gray);
+  border: none;
+}
+
+.create-account label {
+  color: var(--blue);
+  padding: 10px 0px 3px 3px;
+  font-size: 0.7rem;
+}
+
+.create-account-form input {
+  display: block;
+  box-shadow: 0px 0px 2px #707070;
+  border: solid 1px #707070;
+  border-radius: 3px;
+}
+
+.checkbox-conditions {
+  display: flex;
+}
+
+.sign-up-button {
+  margin: 30px auto 30px auto;
+  cursor: pointer;
+  border-radius: 12px 12px 12px 12px;
+  border: none;
+  background: var(--button-red);    
+  box-shadow: 0 0 10px var(--shadow-color);
+  width: 70%;
+  min-width: 80px;
+  max-width: 350px;
+  height: 40px;
+  align-items: center;
+  color: var(--gray);
+  font-family: "Montserrat", arial;
+  font-size: 0.8rem;
+  align-items: center;
+}

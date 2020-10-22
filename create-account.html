@@ -54,18 +54,25 @@
         </nav>
       </section>
     </header>
-    <h1>Join us on Game Hub</h1>
-    <form>
-      <label>Full Name<input name="full name" /></label>
-      <label>Username<input name="username" /></label>
-      <label>Email<input name="email" /></label>
-      <label>Password<input name="password" /></label>
-      <label>Repeat Password<input name="repeat password" /></label>
-    </form>
-    <label>
-      <input type="checkbox" />I read and accepted the Terms [&] Conditions</label>
-    <button>Sign Up</button>
-    <section>
+    <main>
+      <section class="create-account">
+      <h1>Join us on Game Hub</h1>
+      <form method="POST" class="create-account-form">
+        <label for="full-name">Full Name</label>
+        <input type="text" name="full-name" id="full-name" />
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username"/>
+        <label for="emaail">Email</label>
+        <input type="email" name="email" id="email"/>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"/>
+        <label for="repeat-password">Repeat Password</label> 
+        <input type="password" name="repeat password" id="repeat-password" />
+        <label for="accept-conditions" class="checkbox-conditions"><input type="checkbox" name="accept-conditions" value="accept-conditions" id="accept-conditions" />I read and accepted the Terms and Conditions</label>
+        <button type="submit" value="send" class="sign-up-button">Sign Up</button>
+      </form>
+      </section>
+      <section>
       <div>
        <footer>
          <div class="social-media">
@@ -81,5 +88,6 @@
        </footer>
       </div>
      </section>
+    </main>
   </body>
-</html>
+</html> 
