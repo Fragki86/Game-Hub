@@ -7,18 +7,18 @@
       content="This is a page about selling and buying mostly used video-games"
     />
     <meta name="viewport" content="width=device-width, initial-scale:1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
     <link href="../css/major-styles.css" rel="stylesheet" />
     <link href="../css/secondary-styles.css" rel="stylesheet" />
     <link href="../css/buttons.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-      crossorigin="anonymous"
     />
   </head>
   <body>
@@ -69,7 +69,7 @@
   </div>
   <div class="payment-main-part">
     <h2 class="h2-pay-ship">Payment & Shipping Information</h2>
-      <form class="form">
+      <form method:="POST" class="form">
         <div>
           <label for="name-on-card">Name on card</label>
           <input type="text" name="name-on-card" id="name-on-card" class="form-input" required>
@@ -80,18 +80,20 @@
         </div>
         <div>
           <label for="expiration-date">Exp. date</label>
-          <input type="date" name="expiration-date" id="expiration-date" class="form-input" required>
-        </div>
-        <div>
+          <input type="date" name="expiration-date" id="expiration-date" class="exp-date-box" required>
           <label for="cvv">CVV</label>
-          <input type="text" name="cvv" id="cvv" class="form-input" required>
+          <input type="text" name="cvv" id="cvv" class="ccv-box" required>
         </div>
         <div>
           <label>Card type</label>
-          <input type="radio" name="card" value="visa" id="visa" /><label for="visa"><img src="../images/visa.png" class="card-png"></label>
-          <input type="radio" name="card" value="mastercard" id="mastercard" /><label for="mastercard"><img src="../images/mastercard.png" class="card-png"></label>
-          <input type="radio" name="card" value="american-express" id="american-express"/><label for="american-express"><img src="../images/american-express.png" class="card-png"></label>
-          <input type="radio" name="card" value="paypal" id="paypal"/><label for="paypal"><img src="../images/paypal.png" class="card-png"></label>
+          <div>
+          <input type="radio" name="card" value="visa" id="visa" class="radio-button"/><label for="visa"><img src="../images/visa.png" class="card-png"></label>
+          <input type="radio" name="card" value="mastercard" id="mastercard" class="radio-button"/><label for="mastercard"><img src="../images/mastercard.png" class="card-png"></label>
+          </div>
+          <div>
+          <input type="radio" name="card" value="american-express" id="american-express" class="radio-button"/><label for="american-express"><img src="../images/american-express.png" class="card-png"></label>
+          <input type="radio" name="card" value="paypal" id="paypal" class="radio-button"/><label for="paypal"><img src="../images/paypal.png" class="card-png"></label>
+          </div>
         </div>
         <div>
           <label for="email">Email</label>
@@ -113,17 +115,21 @@
         <h3 class="h3-price-p">NOK 99,00</h3>
       </form>
   </div>
-  </body>
-  <footer>
-    <div class="social-media">
-      <a href="#"><img src="../images/twitter.png" class="twitter-icon"></a>
-      <a href="#"><img src="../images/instagram.png" class="instagram-icon"></a>
-      <a href="#"><img src="../images/facebook.png" class="facebook-icon"></a>
+  <section>
+    <div>
+     <footer>
+       <div class="social-media">
+         <a href="#"><img src="../images/twitter.png" class="twitter-icon"></a>
+         <a href="#"><img src="../images/instagram.png" class="instagram-icon"></a>
+         <a href="#"><img src="../images/facebook.png" class="facebook-icon"></a>
+       </div>
+       <ul>
+         <li><a href="../about-us.html">About Us</a></li>
+         <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+         <li><a href="../refund-policy.html">Refund Policy</a></li>
+       </ul>
+     </footer>
     </div>
-    <ul>
-      <li><a href="../about-us.html">About Us</a></li>
-      <li><a href="../privacy-policy.html">Privacy Policy</a></li>
-      <li><a href="../refund-policy.html">Refund Policy</a></li>
-    </ul>
-  </footer>
+   </section>
+  </body>
 </html>
