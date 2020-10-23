@@ -54,17 +54,30 @@
         </nav>
       </section>
     </header>
-    <h1>Profile</h1>
-    <h2>Georgios Fragkias</h2>
-    <img src="!" />
-    <form>
-      <label>Username<input name="username" /></label>
-      <label>Email<input name="email" /></label>
-      <label>Language<input name="language" /></label>
-      <label>City<input name="city" /></label>
-      <label>Birth Year<input name="birth year" /></label>
-      <label>User Rating<input name="user rating" /></label>
-    </form>
+    <section class="profile-page">
+      <h1>Profile</h1>
+      <div>
+        <img src="images/User image.png" alt="user's image" class="prof-pic-3"/>
+        <h2>Georgios Fragkias</h2>
+      </div>
+      <form method="POST" class="profile-page-form" enctype="multipart/form-data">
+        <label for="user-name">Username</label>
+        <input type="text" name="user-name" id="user-name" placeholder="GeF"/>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="geo.fragkias@gmail.com"/>
+        <label for="language">Language</label>
+        <input type="text" name="language" id="language" placeholder="English, Norwegian, Greek">
+        <label for="country">Country</label>
+        <input type="country" name="country" placeholder="Norway"/>
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" placeholder="Nittedal">
+        <label for="birth-year">Birthday</label>
+        <input type="date" name="birth-year" id="birth-year">
+        <label for="user-rating">User Rating</label>
+        <input type="text" name="user-rating" id="user-rating" placeholder="user-rating">
+        <button type="submit" value="send" class="put-on-sale-button">Put on Sale</button>
+      </form>
+    </section>
     <section>
       <div>
        <footer>

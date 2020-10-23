@@ -59,16 +59,20 @@
       <h1>Join us on Game Hub</h1>
       <form method="POST" class="create-account-form">
         <label for="full-name">Full Name</label>
-        <input type="text" name="full-name" id="full-name" />
+        <input type="text" name="full-name" id="full-name" required/>
         <label for="username">Username</label>
-        <input type="text" name="username" id="username"/>
+        <input type="text" name="username" id="username" required/>
         <label for="emaail">Email</label>
-        <input type="email" name="email" id="email"/>
+        <input type="email" name="email" id="email" required/>
         <label for="password">Password</label>
-        <input type="password" name="password" id="password"/>
+        <input type="password" name="password" id="password" required/>
         <label for="repeat-password">Repeat Password</label> 
-        <input type="password" name="repeat password" id="repeat-password" />
-        <label for="accept-conditions" class="checkbox-conditions"><input type="checkbox" name="accept-conditions" value="accept-conditions" id="accept-conditions" />I read and accepted the Terms and Conditions</label>
+        <input type="password" name="repeat password" id="repeat-password" required/>
+        <label for="country">Country</label>
+        <input type="text" name="country" id="country" required/>
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" required/>
+        <input type="checkbox" name="checkbox-2" id="checkbox-2"><label for="checkbox-2">I accept the terms and conditions</label>
         <button type="submit" value="send" class="sign-up-button">Sign Up</button>
       </form>
       </section>

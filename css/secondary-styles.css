@@ -321,7 +321,7 @@
   padding-left: 25px;
 }
 
-form {
+.form-payment {
   grid-column: 1 / 3;
   grid-row: 2;
   display: grid;
@@ -333,7 +333,7 @@ form {
   border: solid 1px #707070;
 }
 
-form label {
+.form-payment label {
   color: var(--blue);
   padding-left: 15px;
   font-size: 0.7rem;
@@ -344,7 +344,7 @@ form label {
   display: block;
   box-shadow: 0px 0px 2px #707070;
   margin-left: 15px;
-  width: 80%;
+  width: 90%;
   border: solid 1px #707070;
   border-radius: 3px;
 }
@@ -453,9 +453,10 @@ form label {
 
 .sell-game-form input, select, textarea {
   display: block;
+  height: 30px;
   box-shadow: 0px 0px 2px #707070;
-  border: solid 1px #707070;
-  border-radius: 3px;
+  border: solid 2px var(--red);
+  border-radius: 7px;
 }
 
 .put-on-sale-button {
@@ -475,11 +476,15 @@ form label {
   font-size: 0.8rem;
   align-items: center;
 }
+
+.put-on-sale-button:hover {
+  background: var(--button-hover);
+}
 /*--------------------------------------------------------------*/
 
 
 
-/* -- Sell-Game --*/
+/* -- Sell Game --*/
 .create-account {
   width: 90%;
   background-color: var(--gray);
@@ -522,13 +527,94 @@ form label {
 
 .create-account-form input {
   display: block;
+  height: 30px;
   box-shadow: 0px 0px 2px #707070;
-  border: solid 1px #707070;
-  border-radius: 3px;
+  border: solid 2px var(--red);
+  border-radius: 7px;
 }
 
-.checkbox-conditions {
+.sign-up-button {
+  margin: 30px auto 30px auto;
+  cursor: pointer;
+  border-radius: 12px 12px 12px 12px;
+  border: none;
+  background: var(--button-red);    
+  box-shadow: 0 0 10px var(--shadow-color);
+  width: 70%;
+  min-width: 80px;
+  max-width: 350px;
+  height: 40px;
+  align-items: center;
+  color: var(--gray);
+  font-family: "Montserrat", arial;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.sign-up-button:hover {
+  background: var(--button-hover);
+}
+/*--------------------------------------------------------------*/
+
+
+
+/* -- Profile page --*/
+.profile-page {
+  width: 90%;
+  background-color: var(--gray);
+  margin: 20px auto 50px auto;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.profile-page h1 {
+  width: 80%;
+  margin: 10px auto 0px auto;
+  min-width: 0px;
+  max-width: 110px;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom: solid 2px var(--red);
+  color: var(--blue);
+  font-size: 1.4rem;
+}
+
+.profile-page div {
   display: flex;
+  width: 80%;
+  padding: 10px 0px 0px 40px;
+}
+
+.profile-page h2 {
+  font-size: 1.1rem;
+  font-weight: 350;
+}
+
+.prof-pic-3{
+  margin-right: 10px;
+  border: solid 2px var(--red);
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+}
+
+.profile-page-form {
+  width: 80%;
+  background-color: var(--gray);
+  border: none;
+}
+
+.profile-page label {
+  color: var(--blue);
+  padding: 10px 0px 3px 3px;
+  font-size: 0.7rem;
+}
+
+.profile-page input {
+  display: block;
+  height: 30px;
+  box-shadow: 0px 0px 2px #707070;
+  border: solid 2px var(--red);
+  border-radius: 7px;
 }
 
 .sign-up-button {
