@@ -54,15 +54,39 @@
         </nav>
       </section>
     </header>
-    <h1>Settings</h1>
-    <p>Visible to others</p>
-    <p>Anybody can message you</p>
-    <p>Only friends can message you</p>
-    <p>Language</p>
-    <label><input type="radio" />English</label>
-    <label><input type="radio" />Norsk</label>
-    <label><input type="radio" />Francais</label>
-    <label><input type="radio" />Ελληνικά</label>
+    <main>
+      <section class="settings">
+      <h1>Settings</h1>
+      <div class="toggle">
+      <p>Visible to others</p>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      </div>
+      <div class="toggle">
+      <p>Anybody can message you</p>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      </div>
+      <div class="toggle">
+      <p>Only friends can message you</p>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      </div>
+      <div class="language">
+        <label>Language</label>
+        <input type="radio" name="language" value="english" id="english" class="radio-language"><label for="english">English</label>
+        <input type="radio" name="language" value="norsk" id="norsk" class="radio-language"><label for="norsk">Norsk</label>
+        <input type="radio" name="language" value="francais" id="francais" class="radio-language"><label for="francais">Francais</label>
+        <input type="radio" name="language" value="greek" id="greek" class="radio-language"><label for="greek">Ελληνικά</label>
+      </div>
+    </section>
+    </main>
     <section>
       <div>
        <footer>
