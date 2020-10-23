@@ -441,8 +441,10 @@
 
 .sell-game-form {
   width: 80%;
-  background-color: var(--gray);
-  border: none;
+  display: grid;
+  text-align: left;
+  margin: 0px auto 10px auto;
+  padding-bottom: 10px;
 }
 
 .sell-game-form label {
@@ -451,7 +453,7 @@
   font-size: 0.7rem;
 }
 
-.sell-game-form input, select, textarea {
+.sell-game-form select, .sell-game-form textarea, .sell-game-form input:not(.file) {
   display: block;
   height: 30px;
   box-shadow: 0px 0px 2px #707070;
@@ -460,7 +462,7 @@
 }
 
 .put-on-sale-button {
-  margin: 20px auto 0px auto;
+  margin: 40px auto 20px auto;
   cursor: pointer;
   border-radius: 12px 12px 12px 12px;
   border: none;
@@ -469,7 +471,7 @@
   width: 70%;
   min-width: 80px;
   max-width: 350px;
-  height: 40px;
+  height: 45px;
   align-items: center;
   color: var(--gray);
   font-family: "Montserrat", arial;
@@ -484,7 +486,7 @@
 
 
 
-/* -- Sell Game --*/
+/* -- Create Account --*/
 .create-account {
   width: 90%;
   background-color: var(--gray);
@@ -517,20 +519,29 @@
   width: 80%;
   background-color: var(--gray);
   border: none;
+  display: grid;
+  text-align: left;
+  margin: 0px auto 10px auto;
+  padding-bottom: 10px;
 }
 
-.create-account label {
+.create-account label:not(.checkbox-2-label) {
   color: var(--blue);
   padding: 10px 0px 3px 3px;
   font-size: 0.7rem;
 }
 
-.create-account-form input {
+.create-account-form input:not(.checkbox-2) {
   display: block;
   height: 30px;
   box-shadow: 0px 0px 2px #707070;
   border: solid 2px var(--red);
   border-radius: 7px;
+}
+
+.checkbox-2-div {
+  padding-top: 10px;
+  font-size: 0.7rem;
 }
 
 .sign-up-button {
@@ -562,8 +573,9 @@
 .profile-page {
   width: 90%;
   background-color: var(--gray);
-  margin: 20px auto 50px auto;
+  margin: 30px auto;
   border-radius: 10px 10px 10px 10px;
+  padding-bottom: 15px;
 }
 
 .profile-page h1 {
@@ -599,8 +611,10 @@
 
 .profile-page-form {
   width: 80%;
-  background-color: var(--gray);
-  border: none;
+  display: grid;
+  text-align: left;
+  margin: 0px auto 10px auto;
+  padding-bottom: 10px;
 }
 
 .profile-page label {
@@ -616,21 +630,43 @@
   border: solid 2px var(--red);
   border-radius: 7px;
 }
+/*--------------------------------------------------------------*/
 
-.sign-up-button {
-  margin: 30px auto 30px auto;
-  cursor: pointer;
-  border-radius: 12px 12px 12px 12px;
-  border: none;
-  background: var(--button-red);    
-  box-shadow: 0 0 10px var(--shadow-color);
-  width: 70%;
-  min-width: 80px;
-  max-width: 350px;
-  height: 40px;
+
+
+/* -- Contact --*/
+.contact {
+  width: 90%;
+  background-color: var(--gray);
+  margin: 40px auto;
+  border-radius: 10px 10px 10px 10px;
+  padding-bottom: 15px;
+}
+
+.contact h1 {
+  width: 40%;
+  margin: 10px auto 25px auto;
+  min-width: 0px;
+  max-width: 250px;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom: solid 2px var(--red);
+  color: var(--blue);
+  font-size: 1.4rem;
+  }
+
+.contact div {
+  display: flex;
   align-items: center;
-  color: var(--gray);
-  font-family: "Montserrat", arial;
+  padding: 5px 0px 10px 15px;
   font-size: 0.8rem;
-  align-items: center;
+  }
+
+.contact img {
+  padding-right: 15px;
+}
+
+.contact a {
+  color: var(--blue);
+  text-decoration: underline;
 }
