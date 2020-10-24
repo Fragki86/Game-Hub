@@ -10,6 +10,9 @@
     border: none;
     background: var(--button-red);    
     box-shadow: 0 0 10px var(--shadow-color);
+    text-decoration: none;
+    color: var(--gray);
+    font: 23px "Montserrat", arial;
 }
 
 .join:hover {
@@ -22,7 +25,7 @@ button a {
     font: 23px "Montserrat", arial;
 }
 
-
+/* -- Toggle Switch for settings -- */
 .switch {
   position: relative;
   display: block;
@@ -89,4 +92,6 @@ input:checked + .slider:before {
 
 .toggle {
     display: flex;
+    width: 80%;
 }
+/*--------------------------------------------------------------*/

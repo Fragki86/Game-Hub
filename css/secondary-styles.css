@@ -161,7 +161,6 @@
   color: var(--blue);
   font-size: 0.9rem;
   border-left: solid 1px var(--blue);
-
 }
 
 .p-description {
@@ -699,4 +698,20 @@
     color: var(--blue);
     font-weight: 400;
     display: inline-block;
+    margin-top: 0px;
+  }
+
+  .language {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    color: var(--blue);
+  }
+
+  .radio-language {
+    grid-column: 2 / 3;
+  }
+
+  .language p {
+    grid-column: 1;
+    grid-row: 1;
   }

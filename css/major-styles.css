@@ -67,7 +67,7 @@ footer a {
   margin: 4px auto;
   justify-content: space-between;
 }
-
+ 
 
 /* -- Navigation Menu --*/
 nav {
@@ -183,7 +183,7 @@ nav li {
   margin-right: 10px;
   max-width: 43px;
   min-width: 43px;
-  display: block;
+  display: inline;;
   border: white;
 }
 
