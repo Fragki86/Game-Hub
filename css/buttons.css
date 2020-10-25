@@ -25,6 +25,35 @@ button a {
     font: 23px "Montserrat", arial;
 }
 
+.buy-now {
+  grid-column: 1;
+  grid-row: 5;
+  display: block;
+  margin: 20px auto 0px auto;
+  cursor: pointer;
+  border-radius: 12px 12px 12px 12px;
+  border: none;
+  background: var(--button-red);    
+  box-shadow: 0 0 10px var(--shadow-color);
+  width: 70%;
+  min-width: 80px;
+  max-width: 350px;
+  height: 40px;
+  align-items: center;
+  color: var(--gray);
+  font-family: "Montserrat", arial;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.buy-now:hover {
+  background: var(--button-hover);
+}
+
+.button-text {
+  text-decoration: none;
+}
+
 /* -- Toggle Switch for settings -- */
 .switch {
   position: relative;

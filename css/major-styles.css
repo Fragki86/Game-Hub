@@ -155,6 +155,7 @@ nav li {
   background: var(--gray);
   border-right: solid 2px var(--red);
   border-left: solid 2px var(--red);
+  transition: 800ms;
 }
 
 .set {
