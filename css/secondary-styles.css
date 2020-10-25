@@ -21,36 +21,6 @@
 }
 
 
-/* -- Assassin's Creed: Ezio Collection -- */
-.ac-col-carousel {
-  width: 90%;
-  display: flex;
-  margin: 20px auto 15px auto;
-  min-width: 200px;
-  max-width: 400px;  
-}
-
-
-/* -- Call of Duty: Modern Warfare -- */
-.cod-carousel {
-  width: 90%;
-  display: flex;
-  margin: 20px auto 15px auto;
-  min-width: 200px;
-  max-width: 400px;
-}
-
-
-/* -- Red Dead Redemption: 2 -- */
-.rdr-carousel {
-  width: 90%;
-  display: flex;
-  margin: 20px auto 15px auto;
-  min-width: 200px;
-  max-width: 400px;
-}
-
-
 /* -- Assassin's Creed: Valhalla -- */
 .ac-val-carousel {
   width: 90%;
@@ -190,11 +160,9 @@
   font-weight: 400;
   font-size: 0.9rem;
   margin-top: 0px;
-}
-
-
-
+}  
 /*--------------------------------------------------------------*/
+
 
 /* -- Grid-Payment --*/
 .payment-top-part {
@@ -711,7 +679,7 @@
   padding-top: 20px;
   border-bottom: solid 2px var(--red);
   color: var(--blue);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .about-privacy-refund p {

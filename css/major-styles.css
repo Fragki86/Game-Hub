@@ -127,6 +127,14 @@ nav {
   width: 80%;
   min-width: 150px;
   max-width: 320px;
+  animation-name: scroll-in;
+  animation-duration: 450ms;
+  animation-timing-function: ease-out;
+}
+
+@keyframes scroll-in {
+  0% {left: -100%;}
+  100% {left: 0%;}
 }
 
 nav a {
@@ -155,7 +163,6 @@ nav li {
   background: var(--gray);
   border-right: solid 2px var(--red);
   border-left: solid 2px var(--red);
-  transition: 800ms;
 }
 
 .set {
@@ -200,6 +207,58 @@ nav li {
   cursor: pointer;
   font-family: hidden;
 }
+/* ----------------------------------------------*/
+
+
+/* -- Carousel -- */
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  } 
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+/* ----------------------------------------------*/
 
 
 /* Headers & Paragraphs -- */
