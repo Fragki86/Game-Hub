@@ -264,9 +264,30 @@ h2.choose {
   height: 44px;
 }
 
-.heart {
-  padding: 5px 15px 0px 15px;
+.heart-icon {
+  font-size: 2rem;
+  padding: 0px 15px;
+  color: var(--red);
+  display: flex;
 }
+
+#favorite {
+  display: none;
+}
+
+.heart{
+  z-index: 1;
+}
+
+.heart-full {
+  display: none;
+}
+
+#favorite:checked ~ .heart-full {
+  display: block;
+  position: absolute;
+}
+
 /* --------------------------- Tablet Styles --------------------------- 
 @media only screen and (min-width:481px) and (max-width:768px) {
 
