@@ -133,7 +133,7 @@ p {
   font-size: 0.9rem;
   color: var(--gray);
   font-weight: 300;
-  margin-left: 15px;
+  margin: 10px auto;
 }
 
 h2.choose {
@@ -207,6 +207,16 @@ h2.choose {
 /* --------------------------- Mobile  Styles --------------------------- */
 @media only screen and (max-width:767px){
 /* -- Navigation Menu --*/
+#search-desktop {
+  display: none;
+}
+.search-button-desktop {
+  display: none;
+}
+.search-bar-form-desktop {
+  display: none;
+}
+
 nav {
   display: none;
 }
@@ -358,12 +368,6 @@ nav li {
 /* --------------------------- Desktop Styles --------------------------- */
 @media only screen and (min-width:769px) {
 /* -- Navigation Bar -- */
-.logo {
-  display: block;
-  max-width: 600px;
-  margin: 0px auto;
-}
-
 .search-bar {
   display: none;
 }
@@ -376,38 +380,54 @@ nav li {
 #hamburger-menu {
   display: none;
 }
+.set {
+  display: none;
+}
+.ham {
+  display: none;
+}
 
+.logo {
+  display: block;
+  max-width: 400px;
+  margin: 0px auto;
+}
 
 nav {
+  position: sticky;
   display: block;
-  width: 60%;
-  min-width: 1300px;
-  padding-left: 120px;
-  padding-right: 120px;
+  width: 70%;
+  min-width: 1100px;
   background-color: var(--gray);
   border-radius: 50px 50px 50px 50px;
   margin: 0 auto 10px auto;  
 }
 
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 nav li {
-  font-size: 1.1rem;
-  display: inline-block;
+  font-size: 1rem;
+}
+
+nav li:hover {
+  font-weight: 700;
 }
 
 nav a {
   text-decoration: none;
   color: var(--red);
-  padding-right: 100px;
+  padding-right: 80px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.ham {
-  display: none;
-}
-
-.search {
+#search-desktop {
   background: white;
   border-radius: 50px;
-  border-color: var(--red);
   border-width: thin;
   font-size: 0.95rem;
   font-style: italic;
@@ -419,18 +439,15 @@ nav a {
   box-shadow: inset 0px 0px 3px;
 }
 
-.search-icon {
- position: absolute;
- margin-left: 25px;
- margin-top: 3px;
- width: 0.9%; 
-}
-
-.cart {
-  position: absolute;
-  top: 525px;
-  margin: 3px 0px 4px 2px;
-  width: 1.2%;
+.search-button-desktop {
+  font-size: 15px;
+  border-radius: 100%;
+  border: solid 1px white;
+  padding: 4px 5px;
+  color: #fff;
+  background-color:  var(--red);
+  cursor: pointer;
+  font-family: hidden;
 }
 
 .current {
@@ -440,10 +457,33 @@ nav a {
 
 .ctr-panel {
   display: flex;
-  width: 82.5%;
-  justify-content: flex-end;  
+  width: 90%;
+  justify-content: flex-end;
 }
-*/
+
+.profile-name {
+  width: 100%;
+  min-width: 80px;
+  max-width: 140px;
+  background: white;
+  margin: auto 10px;
+  border-radius: 50px 50px 50px 50px;
+  border: solid 1px var(--gray);
+  font-size: 0.8rem;
+  color: var(--red);
+  text-align: center;
+}
+
+.prof-pic {
+  margin-right: 5px;
+  border: solid 1px white;
+  border-radius: 100%
+
+}
+
+.message-pic {
+  margin-right: 5px;
+}
 
 
 }
