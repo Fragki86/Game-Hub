@@ -67,54 +67,7 @@ footer a {
   justify-content: space-between;
 }
  
-/* -- Carousel -- */
-#carousel {
-  overflow: hidden;
-}
 
-#carousel figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  animation: 20s carousel infinite;
-}
-
-#carousel figure img {
-  width: 20%;
-  float: left;
-}
-
-
-@keyframes carousel {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  } 
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -300%;
-  }
-}
 
 /* -- Headers & Paragraphs -- */
 .latest-entries, .coming-soon{
@@ -216,6 +169,7 @@ h2.choose {
 .search-bar-form-desktop {
   display: none;
 }
+
 
 nav {
   display: none;
@@ -355,6 +309,75 @@ nav li {
   font-family: hidden;
 }
 
+/* -- Carousel -- */
+#carousel {
+  overflow: hidden;
+}
+
+#carousel figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s carousel infinite;
+}
+
+#carousel figure img {
+  width: 20%;
+  float: left;
+}
+
+
+@keyframes carousel {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  } 
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
+.landing-page-game-img {
+  width: 90%;
+  display: flex;
+  margin: 20px auto 15px auto;
+  min-width: 200px;
+  max-width: 500px;
+}
+
+.landing-page-game-tit {
+  width: 75%;
+  max-width: 350px;
+  margin: 10px auto 20px auto;
+  text-align: center;
+  color: #d9d7d7;
+  font-weight: 500;
+  border-bottom: solid 2px #d9d7d7;
+  font-size: 1.2rem;
+}
+
+
 }
 /* ----------------------------------------------*/
 
@@ -387,16 +410,29 @@ nav li {
   display: none;
 }
 
-.logo {
-  display: block;
-  max-width: 400px;
+body {
+  width: 70%;
   margin: 0px auto;
+  background: var(--background);
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body a {
+  text-decoration: none;
+}
+
+p {
+  width: 90%;
+  font-size: 1rem;
+  color: var(--gray);
+  font-weight: 300;
+  margin: 10px auto;
 }
 
 nav {
-  position: sticky;
   display: block;
-  width: 70%;
+  width: 100%;
   min-width: 1100px;
   background-color: var(--gray);
   border-radius: 50px 50px 50px 50px;
@@ -457,7 +493,7 @@ nav a {
 
 .ctr-panel {
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: flex-end;
 }
 
@@ -485,5 +521,159 @@ nav a {
   margin-right: 5px;
 }
 
+/* -- Landing Page Game -- */
+.landing-page-game {
+  width: 100%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
 
+.landing-page-game-img {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-content: center;
+  text-align: center;
+  min-width: 300px;
+  max-width: 600px;
+  
+}
+
+.landing-page-game-des {
+  grid-column: 2/3;
+  grid-row: 1;
+}
+
+.landing-page-game-tit {
+  grid-column: 2/3;
+  width: 75%;
+  max-width: 350px;
+  margin: 10px auto 20px auto;
+  text-align: center;
+  color: #d9d7d7;
+  font-weight: 500;
+  border-bottom: solid 2px #d9d7d7;
+  font-size: 1.2rem;
+}
+
+/* -- Carousel -- */
+.carousel-mix {
+  display: flex;
+}
+
+#carousel {
+  width: 50%;
+  overflow: hidden;
+}
+
+#carousel figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s carousel infinite;
+}
+
+#carousel figure img {
+  width: 20%;
+  float: left;
+}
+
+
+@keyframes carousel {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  } 
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
+#carousel-2 {
+  width: 50%;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+#carousel-2 figure {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  animation: 20s carousel infinite;
+}
+
+.carousel-h2 {
+  width: 80%;
+  font-size: 1.2rem;
+  margin: 0px 0px 0px 30px;
+  text-decoration: underline;
+  color: var(--gray);
+}
+
+.carousel-p {
+  font-size: 1rem;
+}
+
+@keyframes carousel {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  } 
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
+.coming-soon-games {
+  display: flex;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}
 }
