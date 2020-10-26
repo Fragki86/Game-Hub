@@ -24,17 +24,6 @@
   margin: 0px auto 40px auto;
 }
 
-
-/* -- "Buy" Section Images -- */
-.img-buy-1 { 
-  width: 90%;
-  display: flex;
-  margin: 10px auto 0px auto;
-  min-width: 200px;
-  max-width: 400px;
-}
-
-
 /* -- Grid Buy Section --*/
 .grid {
   display: grid;
