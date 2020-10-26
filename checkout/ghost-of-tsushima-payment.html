@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <!--Head -->
   <head>
     <title>Game Hub</title>
     <meta
@@ -22,6 +23,7 @@
     <link href="../css/buttons.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- Header -->
     <header>
        <a href="../index.html">
         <img  src="../images/Logo.png" alt="Game hub logo" class="logo">
@@ -59,19 +61,21 @@
         </nav>
       </section>
     </header>
-    <div class="payment-top-part">
-      <h1 class="h1-title-p">Ghost of Tsushima</h1>
-      <img src="../images/ghost.jpg" alt="Ghost of Tsushima" class="img-buy-2-p"/>
-      <h2 class="h2-sellers-info">Seller's Info:</h2>
-      <div class="p-sellers-info">
-        <p class="p-pay"><span>Name:</span> Georgios Fragkias</p>
-        <p class="p-pay"><span>Email:</span> geo.fragkias@gmail.com</p>
-        <p class="p-pay"><span>Sales:</span> 21</p>
-        <p class="p-pay"><span>Rating:</span> 5.0/5.0</p>
+    <!-- Main -->
+    <main>
+      <div class="payment-top-part">
+        <h1 class="h1-title-p">Ghost of Tsushima</h1>
+        <img src="../images/ezio.jpg" alt="Ghost of Tsushima" class="img-buy-2-p"/>
+        <h2 class="h2-sellers-info">Seller's Info:</h2>
+        <div class="p-sellers-info">
+          <p class="p-pay"><span>Name:</span> Georgios Fragkias</p>
+          <p class="p-pay"><span>Email:</span> geo.fragkias@gmail.com</p>
+          <p class="p-pay"><span>Sales:</span> 21</p>
+          <p class="p-pay"><span>Rating:</span> 5.0/5.0</p>
+        </div>
       </div>
-    </div>
-    <div class="payment-main-part">
-      <h2 class="h2-pay-ship">Payment and Shipping Information</h2>
+      <div class="payment-main-part">
+        <h2 class="h2-pay-ship">Payment and Shipping Information</h2>
         <form method:="POST" class="form-payment">
           <div>
             <label for="name-on-card">Name on card</label>
@@ -92,12 +96,12 @@
           <div>
             <label>Card type</label>
             <div>
-            <input type="radio" name="card" value="visa" id="visa" class="radio-button"/><label for="visa"><img src="../images/visa.png" alt="visa" class="card-png"></label>
-            <input type="radio" name="card" value="mastercard" id="mastercard" class="radio-button"/><label for="mastercard"><img src="../images/mastercard.png" alt="mastercard" class="card-png"></label>
+              <input type="radio" name="card" value="visa" id="visa" class="radio-button"/><label for="visa"><img src="../images/visa.png" alt="visa" class="card-png"></label>
+              <input type="radio" name="card" value="mastercard" id="mastercard" class="radio-button"/><label for="mastercard"><img src="../images/mastercard.png" alt="mastercard" class="card-png"></label>
             </div>
             <div>
-            <input type="radio" name="card" value="american-express" id="american-express" class="radio-button"/><label for="american-express"><img src="../images/american-express.png" alt="american express" class="card-png"></label>
-            <input type="radio" name="card" value="paypal" id="paypal" class="radio-button"/><label for="paypal"><img src="../images/paypal.png" alt="paypal" class="card-png"></label>
+              <input type="radio" name="card" value="american-express" id="american-express" class="radio-button"/><label for="american-express"><img src="../images/american-express.png" alt="american express" class="card-png"></label>
+              <input type="radio" name="card" value="paypal" id="paypal" class="radio-button"/><label for="paypal"><img src="../images/paypal.png" alt="paypal" class="card-png"></label>
             </div>
           </div>
           <div>
@@ -117,24 +121,23 @@
             <input type="text" name="po-code" id="po-code" class="form-input" required>
           </div>
           <button class="checkout-button" type="submit" value="send">Check Out</button>
-          <h3 class="h3-price-p">NOK 559,00</h3>
+          <h3 class="h3-price-p">NOK 99,00</h3>
         </form>
-    </div> 
-    <section>
-      <div>
-       <footer>
-         <div class="social-media">
-           <a href="#"><img src="../images/twitter.png" alt="Twitter" class="twitter-icon"></a>
-           <a href="#"><img src="../images/instagram.png" alt="Instagram" class="instagram-icon"></a>
-           <a href="#"><img src="../images/facebook.png" alt="Facebook" class="facebook-icon"></a>
-         </div>
-         <ul>
-           <li><a href="../about-us.html">About Us</a></li>
-           <li><a href="../privacy-policy.html">Privacy Policy</a></li>
-           <li><a href="../refund-policy.html">Refund Policy</a></li>
-         </ul>
-       </footer>
       </div>
-     </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="social-media">
+        <a href="#"><img src="../images/twitter.png" alt="Twitter" class="twitter-icon"></a>
+        <a href="#"><img src="../images/instagram.png" alt="Instagram" class="instagram-icon"></a>
+        <a href="#"><img src="../images/facebook.png" alt="Facebook" class="facebook-icon"></a>
+      </div>
+      <ul>
+        <li><a href="../about-us.html">About Us</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../refund-policy.html">Refund Policy</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
+
