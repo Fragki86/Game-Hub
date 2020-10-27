@@ -681,7 +681,7 @@ nav a {
   width: 100%;
 }
 
-/* -- "Buy" Section Images -- */
+/* -- Buy Page Boxes -- */
 .img-buy-1 { 
   width: 90%;
   display: flex;
@@ -701,8 +701,25 @@ nav a {
   height: 44px;
 }
 
-.buy-main-boxes {
-  display: flex;
+.buy-page-boxes {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+  border-bottom: solid 1px white;
+  padding-bottom: 30px;
+  min-width: 790px;
+}
+
+.buy-page-boxes-p {
+  width: 90%;
+  grid-column: 2;
+  font-size: 0.9rem;
+  margin-top: 0px;
+}
+
+.game-box {
+  width: 100%;
+  min-width: 350px;
 }
 
 footer {
