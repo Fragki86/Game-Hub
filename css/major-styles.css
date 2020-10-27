@@ -107,6 +107,32 @@ h2.choose {
   position: absolute;
 }
 
+/* -- About Us, Privacy, Refund --*/
+.about-privacy-refund {
+  width: 90%;
+  background-color: var(--gray);
+  margin: 20px auto 50px auto;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.about-privacy-refund h1 {
+  width: 40%;
+  margin: 0px auto 20px auto;
+  min-width: 180px;
+  max-width: 220px;
+  text-align: center;
+  padding-top: 20px;
+  border-bottom: solid 2px var(--red);
+  color: var(--blue);
+  font-size: 1.2rem;
+}
+
+.about-privacy-refund p {
+  color: var(--bue);
+  padding: 0px 0px 40px 15px;
+}
+
+
 /* --------------------------- Mobile  Styles --------------------------- */
 @media only screen and (max-width:767px){
 /* -- Navigation Menu --*/
@@ -484,7 +510,7 @@ nav li {
 .button-text {
   text-decoration: none;
 }
-/*--------------------------------------------------------------*/
+/*------------------------------------*/
 
 
 /* -- Grid-Payment --*/
@@ -706,7 +732,45 @@ footer a {
   margin: 4px auto;
   justify-content: space-between;
 }
-/*--------------------------------------------------------------*/
+/*-------------------------------*/
+
+/* -- Contact --*/
+.contact {
+  width: 80%;
+  background-color: var(--gray);
+  margin: 40px auto;
+  border-radius: 10px 10px 10px 10px;
+  padding-bottom: 15px;
+}
+
+.contact h1 {
+  width: 40%;
+  margin: 10px auto 25px auto;
+  min-width: 0px;
+  max-width: 250px;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom: solid 2px var(--red);
+  color: var(--blue);
+  font-size: 1.4rem;
+  }
+
+.contact div {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px 10px 15px;
+  font-size: 0.8rem;
+  }
+
+.contact img {
+  padding-right: 15px;
+}
+
+.contact a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+/*--------------------------*/
 
 
 }
@@ -850,7 +914,32 @@ nav a {
 
 .message-pic {
   margin-right: 5px;
+  cursor: pointer;
 }
+
+#messages {
+  display: none;
+}
+
+#messages:hover ~ .message-info {
+  display: block;
+}
+
+.message-info {
+  display: none;
+  position: absolute;
+  top: 200px;
+  min-width: 80px;
+  max-width: 140px;
+  background: white;
+  margin: auto ;
+  border-radius: 50px 50px 50px 50px;
+  border: solid 1px var(--gray);
+  font-size: 0.8rem;
+  color: var(--red);
+  text-align: center;
+}
+
 
 /* -- Landing Page Game -- */
 .landing-page-game {
@@ -869,7 +958,6 @@ nav a {
   text-align: center;
   min-width: 300px;
   max-width: 600px;
-  
 }
 
 .landing-page-game-des {
@@ -1049,6 +1137,7 @@ nav a {
   font-size: 1.8rem;
   font-weight: 600;
 }
+/* -------------------------------------*/
 
 /* -- Grid Buy Section --*/
 .grid {
@@ -1181,7 +1270,7 @@ nav a {
   text-decoration: none;
 }
 
-/*--------------------------------------------------------------*/
+/*-----------------------------------------*/
 
 
 /* -- Grid-Payment --*/
@@ -1368,10 +1457,47 @@ nav a {
 .button-text-p {
   text-decoration: none;
 }
-/*--------------------------------------------------------------*/
+/*-------------------------------------*/
 
+/* -- Contact --*/
+.contact {
+  width: 80%;
+  background-color: var(--gray);
+  margin: 40px auto;
+  border-radius: 10px 10px 10px 10px;
+  padding-bottom: 15px;
+}
 
+.contact h1 {
+  width: 40%;
+  margin: 10px auto 25px auto;
+  min-width: 0px;
+  max-width: 250px;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom: solid 2px var(--red);
+  color: var(--blue);
+  font-size: 1.4rem;
+  }
 
+.contact div {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px 10px 15px;
+  font-size: 0.8rem;
+  }
+
+.contact img {
+  padding-right: 15px;
+}
+
+.contact a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+/*-------------------------------------*/
+
+/* -- Footer --*/
 footer {
   width: 100%;
   margin: 10px auto 0px auto;
@@ -1408,6 +1534,6 @@ footer a {
   justify-content: space-between;
   margin-top: 5px;
 }
-
+/*-------------------------------------*/
 
 }
