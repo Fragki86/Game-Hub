@@ -825,6 +825,7 @@ p {
   margin: 10px auto;
 }
 
+/* -- Navigation & Control Panel -- */
 nav {
   display: block;
   width: 100%;
@@ -939,7 +940,7 @@ nav a {
   color: var(--red);
   text-align: center;
 }
-
+/* -------------------------------------- */
 
 /* -- Landing Page Game -- */
 .landing-page-game {
@@ -999,7 +1000,6 @@ nav a {
   width: 20%;
   float: left;
 }
-
 
 @keyframes carousel {
   0% {
@@ -1269,7 +1269,6 @@ nav a {
 .button-text {
   text-decoration: none;
 }
-
 /*-----------------------------------------*/
 
 
