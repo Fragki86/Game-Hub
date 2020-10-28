@@ -1,5 +1,4 @@
 /* --------------------------- Global  Styles --------------------------- */
-/* -- Basic -- */
 :root {
   --red: #7d0712;
   --background: radial-gradient(#023373, #011a3a);
@@ -33,15 +32,16 @@ header {
 }
 
 /* -- Headers & Paragraphs -- */
-.latest-entries, .coming-soon{
+.h2-landing-page {
   width: 75%;
   max-width: 140px;
   margin: 30px auto 20px auto;
   text-align: center;
   color: var(--gray);
   font-weight: 500;
-  border-bottom: solid 2px var(--gray);
-  font-size: 1.2rem;
+  border: solid 2px var(--gray);
+  border-radius: 5px 5px 5px 5px;
+  font-size: 1.3rem;
 }
 
 p {
@@ -143,6 +143,9 @@ h2.choose {
   display: none;
 }
 .search-bar-form-desktop {
+  display: none;
+}
+#carousel-2 {
   display: none;
 }
 
@@ -334,6 +337,7 @@ nav li {
   }
 }
 
+/* -- Landing page game --*/
 .landing-page-game-img {
   width: 90%;
   display: flex;
@@ -350,7 +354,7 @@ nav li {
   color: #d9d7d7;
   font-weight: 500;
   border-bottom: solid 2px #d9d7d7;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 
 /* -- "Buy" Section Images -- */
@@ -945,15 +949,17 @@ nav a {
 /* -- Landing Page Game -- */
 .landing-page-game {
   width: 100%;
-  margin: 10px auto;
+  margin: 10px auto 80px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  border-bottom: solid thin var(--gray);
+  padding-bottom: 40px;
 }
 
 .landing-page-game-img {
   width: 100%;
-  grid-column: 1/2;
+  grid-column: 2/3;
   grid-row: 1/2;
   justify-content: center;
   text-align: center;
@@ -962,12 +968,12 @@ nav a {
 }
 
 .landing-page-game-des {
-  grid-column: 2/3;
+  grid-column: 1/2;
   grid-row: 1;
 }
 
 .landing-page-game-tit {
-  grid-column: 2/3;
+  grid-column: 1/2;
   width: 75%;
   max-width: 350px;
   margin: 10px auto 20px auto;
@@ -981,6 +987,9 @@ nav a {
 /* -- Carousel -- */
 .carousel-mix {
   display: flex;
+  margin-bottom: 80px;
+  border-bottom: solid thin var(--gray);
+  padding-bottom: 40px;
 }
 
 #carousel {
@@ -1039,13 +1048,14 @@ nav a {
 
 #carousel-2 figure {
   position: relative;
-  width: 100%;
+  display: block;
+  width: 550%;
   margin: 0;
   left: 0;
   animation: 20s carousel infinite;
 }
 
-.carousel-h2 {
+.carousel-2-h2 {
   width: 80%;
   font-size: 1.2rem;
   margin: 0px 0px 0px 30px;
@@ -1053,43 +1063,21 @@ nav a {
   color: var(--gray);
 }
 
-.carousel-p {
+.carousel-2-p {
   font-size: 1rem;
 }
 
-@keyframes carousel {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  } 
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -300%;
-  }
+.carousel-2-pack {
+  display: flex;
 }
+
+/* --------------------------------*/
 
 .coming-soon-games {
   display: flex;
   width: 100%;
+  margin: 10px auto 80px auto;
+  justify-content: center;
 }
 
 /* -- Buy Page Boxes -- */
@@ -1279,7 +1267,7 @@ nav a {
   grid-template-rows: auto ;
   gap: 3px;
   width: 90%;
-  min-width: 800px;
+  min-width: 700px;
   text-align: center;
   background: var(--gray);
   margin: 25px auto 30px auto;
@@ -1332,7 +1320,7 @@ nav a {
   grid-row: 5;
   width: 100%;
   min-width: 100px;
-  max-width: 200px;
+  max-width: 250px;
   grid-template-columns: 30% 70%;
   grid-template-rows: auto;
   margin: 0px auto;
@@ -1343,7 +1331,7 @@ nav a {
 .p-pay {
   grid-column: 1 / 3;
   color: var(--blue);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
   text-align: left;
   margin-top: 0px;
@@ -1351,7 +1339,7 @@ nav a {
 }
 
 .p-pay span{
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--red);
   grid-column: 1 / 2;
