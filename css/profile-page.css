@@ -1,16 +1,17 @@
-/*  Create Account --*/
-.create-account {
+/* -- Profile page --*/
+.profile-page {
     width: 90%;
     background-color: var(--gray);
-    margin: 20px auto 50px auto;
+    margin: 30px auto;
     border-radius: 10px 10px 10px 10px;
+    padding-bottom: 15px;
   }
   
-  .create-account h1 {
+  .profile-page h1 {
     width: 80%;
     margin: 10px auto 0px auto;
     min-width: 0px;
-    max-width: 250px;
+    max-width: 110px;
     text-align: center;
     padding-top: 10px;
     border-bottom: solid 2px var(--red);
@@ -18,41 +19,43 @@
     font-size: 1.4rem;
   }
   
-  .create-account p {
-    color: var(--blue);
-  }
-  
-  .create-account span {
-    font-size: 1rem;
-    font-weight: 450;;
-  }
-  
-  .create-account-form {
+  .profile-page div {
+    display: flex;
     width: 80%;
-    background-color: var(--gray);
-    border: none;
+    padding: 10px 0px 0px 40px;
+  }
+  
+  .profile-page h2 {
+    font-size: 1.1rem;
+    font-weight: 350;
+  }
+  
+  .prof-pic-3{
+    margin-right: 10px;
+    border: solid 2px var(--red);
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+  }
+  
+  .profile-page-form {
+    width: 80%;
     display: grid;
     text-align: left;
     margin: 0px auto 10px auto;
     padding-bottom: 10px;
   }
   
-  .create-account label:not(.checkbox-2-label) {
+  .profile-page label {
     color: var(--blue);
     padding: 10px 0px 3px 3px;
     font-size: 0.7rem;
   }
   
-  .create-account-form input:not(.checkbox-2) {
+  .profile-page input {
     display: block;
     height: 30px;
     box-shadow: 0px 0px 2px #707070;
     border: solid 1px var(--red);
     border-radius: 7px;
   }
-  
-  .checkbox-2-div {
-    padding-top: 10px;
-    font-size: 0.7rem;
-  }
-  

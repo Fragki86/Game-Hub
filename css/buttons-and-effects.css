@@ -91,6 +91,56 @@ button a {
   text-decoration: none;
 }
 
+/* Sign Up 
+------------------------------- */
+.sign-up-button {
+  margin: 30px auto 30px auto;
+  cursor: pointer;
+  border-radius: 12px 12px 12px 12px;
+  border: none;
+  background: var(--button-red);    
+  box-shadow: 0 0 10px var(--shadow-color);
+  width: 70%;
+  min-width: 80px;
+  max-width: 350px;
+  height: 40px;
+  align-items: center;
+  color: var(--gray);
+  font-family: "Montserrat", arial;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.sign-up-button:hover {
+  background: var(--button-hover);
+}
+
+
+/* Put on Sale 
+------------------------------- */
+.put-on-sale-button {
+  margin: 40px auto 20px auto;
+  cursor: pointer;
+  border-radius: 12px 12px 12px 12px;
+  border: none;
+  background: var(--button-red);    
+  box-shadow: 0 0 10px var(--shadow-color);
+  width: 70%;
+  min-width: 80px;
+  max-width: 350px;
+  height: 45px;
+  align-items: center;
+  color: var(--gray);
+  font-family: "Montserrat", arial;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.put-on-sale-button:hover {
+  background: var(--button-hover);
+}
+
+
 /* Toggle Switch for settings 
 ------------------------------- */
 .switch {

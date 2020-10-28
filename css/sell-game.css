@@ -1,16 +1,17 @@
-/*  Create Account --*/
-.create-account {
+/*  Sell-Game 
+------------------------------- */
+.sell-game {
     width: 90%;
     background-color: var(--gray);
     margin: 20px auto 50px auto;
     border-radius: 10px 10px 10px 10px;
   }
   
-  .create-account h1 {
+  .sell-game h1 {
     width: 80%;
     margin: 10px auto 0px auto;
-    min-width: 0px;
-    max-width: 250px;
+    min-width: 50px;
+    max-width: 200px;
     text-align: center;
     padding-top: 10px;
     border-bottom: solid 2px var(--red);
@@ -18,32 +19,30 @@
     font-size: 1.4rem;
   }
   
-  .create-account p {
+  .sell-game p {
     color: var(--blue);
   }
   
-  .create-account span {
+  .sell-game span {
     font-size: 1rem;
     font-weight: 450;;
   }
   
-  .create-account-form {
+  .sell-game-form {
     width: 80%;
-    background-color: var(--gray);
-    border: none;
     display: grid;
     text-align: left;
     margin: 0px auto 10px auto;
     padding-bottom: 10px;
   }
   
-  .create-account label:not(.checkbox-2-label) {
+  .sell-game-form label {
     color: var(--blue);
     padding: 10px 0px 3px 3px;
     font-size: 0.7rem;
   }
   
-  .create-account-form input:not(.checkbox-2) {
+  .sell-game-form select, .sell-game-form textarea, .sell-game-form input:not(.file) {
     display: block;
     height: 30px;
     box-shadow: 0px 0px 2px #707070;
@@ -51,8 +50,4 @@
     border-radius: 7px;
   }
   
-  .checkbox-2-div {
-    padding-top: 10px;
-    font-size: 0.7rem;
-  }
   

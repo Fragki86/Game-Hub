@@ -62,7 +62,7 @@ h2.choose {
 }
 
 .titles-links {
-  color:  var(--gray);
+  color: var(--gray);
   text-decoration: none;
   font-size: 1rem;
 }
@@ -71,6 +71,7 @@ h2.choose {
   font-weight: 400;
   text-align: center;
   margin-top: 40px;
+  color: var(--gray);
 }
 
 .price-h3 {
@@ -83,8 +84,22 @@ h2.choose {
   margin: 0px;
 }
 
+/* -- Special Img Edit -- */
+.coming-soon-img {
+  width: 90%;
+  display: flex;
+  margin: 20px auto 15px auto;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.coming-soon-vertical {
+  display: flex;
+  margin: 0px auto 40px auto;
+}
+
 /* --------------------------- Mobile  Styles --------------------------- */
-@media only screen and (max-width:767px){
+@media only screen and (max-width:900px){
 
 /* No Show 
 ------------------------------- */
@@ -656,7 +671,7 @@ footer a {
 */
 
 /* --------------------------- Desktop Styles --------------------------- */
-@media only screen and (min-width:769px) {
+@media only screen and (min-width:901px) {
 /* No Show
 ------------------------------- */
 .search-bar {
@@ -703,7 +718,8 @@ p {
 nav {
   display: block;
   width: 100%;
-  min-width: 1100px;
+  min-width: 820px;
+  max-width: 1300px;
   background-color: var(--gray);
   border-radius: 50px 50px 50px 50px;
   margin: 0 auto 10px auto;  
@@ -717,7 +733,7 @@ nav ul {
 }
 
 nav li {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 nav li:hover {
@@ -727,7 +743,7 @@ nav li:hover {
 nav a {
   text-decoration: none;
   color: var(--red);
-  padding-right: 80px;
+  padding-right: 30px;
   font-family: 'Montserrat', sans-serif;
 }
 

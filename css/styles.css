@@ -1,10 +1,13 @@
 @import "about-policies.css";
 @import "buttons-and-effects.css";
-@import "major-styles.css";
+@import "basic-styles.css";
 @import "secondary-styles.css";
 @import "buy-payment.css";
 @import "create-account.css";
 @import "contact.css";
+@import "sell-game.css";
+@import "profile-page.css";
+@import "settings.css";
 
 
 
