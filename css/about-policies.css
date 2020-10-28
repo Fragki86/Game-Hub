@@ -1,0 +1,25 @@
+/*  About Us, Privacy, Refund 
+------------------------------- */
+.about-privacy-refund {
+    width: 90%;
+    background-color: var(--gray);
+    margin: 20px auto 50px auto;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .about-privacy-refund h1 {
+    width: 40%;
+    margin: 0px auto 20px auto;
+    min-width: 180px;
+    max-width: 220px;
+    text-align: center;
+    padding-top: 20px;
+    border-bottom: solid 2px var(--red);
+    color: var(--blue);
+    font-size: 1.2rem;
+  }
+  
+  .about-privacy-refund p {
+    color: var(--bue);
+    padding: 0px 0px 40px 15px;
+  }
