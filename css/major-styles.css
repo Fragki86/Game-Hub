@@ -68,9 +68,9 @@ h2.choose {
 }
 
 .titles-h3 {
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
-  margin-bottom: 5px;
+  margin-top: 40px;
 }
 
 .price-h3 {
@@ -82,33 +82,6 @@ h2.choose {
   border-right: solid 1px var(--red);
   margin: 0px;
 }
-
-/* Heart Icon 
-------------------------------- */
-.heart-icon {
-  font-size: 2rem;
-  padding: 0px 15px;
-  color: var(--red);
-  display: flex;
-}
-
-#favorite {
-  display: none;
-}
-
-.heart{
-  z-index: 1;
-}
-
-.heart-full {
-  display: none;
-}
-
-#favorite:checked ~ .heart-full {
-  display: block;
-  position: absolute;
-}
-
 
 /* --------------------------- Mobile  Styles --------------------------- */
 @media only screen and (max-width:767px){
@@ -125,6 +98,9 @@ h2.choose {
   display: none;
 }
 #carousel-2 {
+  display: none;
+}
+.buy-page-boxes-p {
   display: none;
 }
 
@@ -191,11 +167,6 @@ nav {
   animation-name: scroll-in;
   animation-duration: 450ms;
   animation-timing-function: ease-out;
-}
-
-@keyframes scroll-in {
-  0% {left: -100%;}
-  100% {left: 0%;}
 }
 
 nav a {
@@ -280,7 +251,9 @@ nav li {
   width: 500%;
   margin: 0;
   left: 0;
-  animation: 20s carousel infinite;
+  animation-name: carousel;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 
 #carousel figure img {
@@ -288,35 +261,6 @@ nav li {
   float: left;
 }
 
-@keyframes carousel {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  } 
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -300%;
-  }
-}
 
 /*  Landing page game 
 ------------------------------- */
@@ -339,7 +283,7 @@ nav li {
   font-size: 0.9rem;
 }
 
-/*  "Buy" Section Images
+/*  Buy Page Boxes
 ------------------------------- */
 .img-buy-1 { 
   width: 90%;
@@ -469,35 +413,6 @@ nav li {
   font-size: 0.9rem;
   margin-top: 0px;
 }  
-
-.buy-now {
-  grid-column: 1;
-  grid-row: 5;
-  display: block;
-  margin: 20px auto 0px auto;
-  cursor: pointer;
-  border-radius: 12px 12px 12px 12px;
-  border: none;
-  background: var(--button-red);    
-  box-shadow: 0 0 10px var(--shadow-color);
-  width: 70%;
-  min-width: 80px;
-  max-width: 350px;
-  height: 40px;
-  align-items: center;
-  color: var(--gray);
-  font-family: "Montserrat", arial;
-  font-size: 0.8rem;
-  align-items: center;
-}
-
-.buy-now:hover {
-  background: var(--button-hover);
-}
-
-.button-text {
-  text-decoration: none;
-}
 
 /* Grid-Payment 
 ------------------------------- */
@@ -656,71 +571,6 @@ nav li {
   text-align: center;
 }
 
-.checkout-button {
-  grid-column: 1;
-  grid-row: 10;
-  display: block;
-  margin: 20px auto 0px auto;
-  cursor: pointer;
-  border-radius: 12px 12px 12px 12px;
-  border: none;
-  background: var(--button-red);    
-  box-shadow: 0 0 10px var(--shadow-color);
-  width: 70%;
-  min-width: 80px;
-  max-width: 350px;
-  height: 40px;
-  align-items: center;
-  color: var(--gray);
-  font-family: "Montserrat", arial;
-  font-size: 0.8rem;
-  align-items: center;
-}
-
-.checkout-button:hover {
-  background: var(--button-hover);
-}
-
-.button-text-p {
-  text-decoration: none;
-}
-
-/* Footer
-------------------------------- */
-footer {
-  width: 90%;
-  margin: 10px auto 0px auto;
-  text-align: center;
-  }
-
-footer ul {
-  border-top: solid var(--gray);
-  border-width: thin;
-  margin-top: 2px;
-}
-
-footer li { 
-  display: inline-block;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  
-}
-
-footer a {
-  text-decoration: none;
-  color: var(--gray);
-  font-size: 0.7rem;
-}
-
-.social-media {
-  display: flex;
-  width: 20%;
-  min-width: 100px;
-  max-width: 100px;
-  margin: 4px auto;
-  justify-content: space-between;
-}
-
 /*  Contact 
 ------------------------------- */
 .contact {
@@ -757,6 +607,42 @@ footer a {
 .contact a {
   color: var(--blue);
   text-decoration: underline;
+}
+
+/* Footer
+------------------------------- */
+footer {
+  width: 90%;
+  margin: 10px auto 0px auto;
+  text-align: center;
+  }
+
+footer ul {
+  border-top: solid var(--gray);
+  border-width: thin;
+  margin-top: 2px;
+}
+
+footer li { 
+  display: inline-block;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--gray);
+  font-size: 0.7rem;
+}
+
+.social-media {
+  display: flex;
+  width: 20%;
+  min-width: 100px;
+  max-width: 100px;
+  margin: 4px auto;
+  justify-content: space-between;
 }
 
 }
@@ -1004,36 +890,6 @@ nav a {
   float: left;
 }
 
-@keyframes carousel {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  } 
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -300%;
-  }
-}
-
 #carousel-2 {
   width: 50%;
   overflow: hidden;
@@ -1095,7 +951,7 @@ nav a {
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: 1fr;
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px var(--gray);
   padding-bottom: 30px;
   min-width: 790px;
 }
@@ -1221,34 +1077,6 @@ nav a {
   margin-top: 0px;
 }  
 
-.buy-now {
-  grid-column: 2/3;
-  grid-row: 5/6;
-  display: block;
-  margin: 20px auto 0px auto;
-  cursor: pointer;
-  border-radius: 12px 12px 12px 12px;
-  border: none;
-  background: var(--button-red);    
-  box-shadow: 0 0 10px var(--shadow-color);
-  width: 70%;
-  min-width: 80px;
-  max-width: 350px;
-  height: 40px;
-  color: var(--gray);
-  font-family: "Montserrat", arial;
-  font-size: 0.8rem;
-  align-items: center;
-}
-
-.buy-now:hover {
-  background: var(--button-hover);
-}
-
-.button-text {
-  text-decoration: none;
-}
-
 
 /* -- Grid-Payment 
 ------------------------------- */
@@ -1273,7 +1101,6 @@ nav a {
   width: 50%;
   min-width: 400px;
   text-align: center;
-  
   margin: 25px auto 30px auto;
   border-radius: 10px 10px 10px 10px;
 }
@@ -1418,35 +1245,6 @@ nav a {
   font-size: 0.9rem;
   margin-top: 0px;
   text-align: center;
-}
-
-.checkout-button {
-  grid-column: 1;
-  grid-row: 10;
-  display: block;
-  margin: 20px auto 0px auto;
-  cursor: pointer;
-  border-radius: 12px 12px 12px 12px;
-  border: none;
-  background: var(--button-red);    
-  box-shadow: 0 0 10px var(--shadow-color);
-  width: 70%;
-  min-width: 80px;
-  max-width: 350px;
-  height: 40px;
-  align-items: center;
-  color: var(--gray);
-  font-family: "Montserrat", arial;
-  font-size: 0.8rem;
-  align-items: center;
-}
-
-.checkout-button:hover {
-  background: var(--button-hover);
-}
-
-.button-text-p {
-  text-decoration: none;
 }
 
 /*  Contact 

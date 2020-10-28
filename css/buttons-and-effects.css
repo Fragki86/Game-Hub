@@ -1,3 +1,5 @@
+/* Join Us
+------------------------------- */
 .join {
     display: block;
     width: 60%;
@@ -26,8 +28,71 @@ button a {
 }
 
 
+/* Buy now
+------------------------------- */
+.buy-now {
+  grid-column: 1;
+  grid-row: 5;
+  display: block;
+  margin: 20px auto 0px auto;
+  cursor: pointer;
+  border-radius: 12px 12px 12px 12px;
+  border: none;
+  background: var(--button-red);    
+  box-shadow: 0 0 10px var(--shadow-color);
+  width: 70%;
+  min-width: 80px;
+  max-width: 350px;
+  height: 40px;
+  align-items: center;
+  color: var(--gray);
+  font-family: "Montserrat", arial;
+  font-size: 0.8rem;
+  align-items: center;
+}
 
-/* -- Toggle Switch for settings -- */
+.buy-now:hover {
+  background: var(--button-hover);
+}
+
+.button-text {
+  text-decoration: none;
+}
+
+
+/* Checkout 
+------------------------------- */
+.checkout-button {
+  grid-column: 1;
+  grid-row: 10;
+  display: block;
+  margin: 20px auto 0px auto;
+  cursor: pointer;
+  border-radius: 12px 12px 12px 12px;
+  border: none;
+  background: var(--button-red);    
+  box-shadow: 0 0 10px var(--shadow-color);
+  width: 70%;
+  min-width: 80px;
+  max-width: 350px;
+  height: 40px;
+  align-items: center;
+  color: var(--gray);
+  font-family: "Montserrat", arial;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.checkout-button:hover {
+  background: var(--button-hover);
+}
+
+.button-text-p {
+  text-decoration: none;
+}
+
+/* Toggle Switch for settings 
+------------------------------- */
 .switch {
   position: relative;
   display: block;
@@ -96,4 +161,69 @@ input:checked + .slider:before {
     display: flex;
     width: 80%;
 }
-/*--------------------------------------------------------------*/
+
+
+/* Heart Icon 
+------------------------------- */
+.heart-icon {
+  font-size: 2rem;
+  padding: 0px 15px;
+  color: var(--red);
+  display: flex;
+}
+
+#favorite {
+  display: none;
+}
+
+.heart{
+  z-index: 1;
+}
+
+.heart-full {
+  display: none;
+}
+
+#favorite:checked ~ .heart-full {
+  display: block;
+  position: absolute;
+}
+
+
+/* Animations 
+------------------------------- */
+@keyframes scroll-in {
+  0% {left: -100%;}
+  100% {left: 0%;}
+}
+
+
+@keyframes carousel {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  } 
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -300%;
+  }
+}
