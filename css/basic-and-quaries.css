@@ -143,6 +143,7 @@ nav {
   justify-content: left;
   padding-left: 10px;
   padding-top: 15px;
+  padding-right: 0px;
   width: 75%;
   min-width: 150px;
   max-width: 320px;
@@ -150,6 +151,7 @@ nav {
   border-right: solid 2px var(--red);
   border-left: solid 2px var(--red);
   border-radius: 15px 15px 0px 0px;
+  margin-top: 10px;
 }
 
 .prof-pic-2 {
@@ -163,7 +165,6 @@ nav {
 .prof-name-2 {
   width: 100%;
   min-width: 80px;
-  max-width: 250px;
   background: white;
   margin: 10px 10px 10px 0px;
   border-radius: 50px 50px 50px 50px;
