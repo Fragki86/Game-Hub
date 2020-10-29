@@ -143,9 +143,8 @@ nav {
   justify-content: left;
   padding-left: 10px;
   padding-top: 15px;
-  padding-right: 0px;
   width: 75%;
-  min-width: 200px;
+  min-width: 230px;
   border-top: solid 2px var(--red);
   border-right: solid 2px var(--red);
   border-left: solid 2px var(--red);
@@ -204,7 +203,7 @@ nav li {
   padding-left: 10px;
   height: 35px;
   width: 80%;
-  min-width: 200px;
+  min-width: 230px;
   list-style: none;
   align-items: center;
   background: var(--gray);
