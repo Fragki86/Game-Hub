@@ -145,8 +145,7 @@ nav {
   padding-top: 15px;
   padding-right: 0px;
   width: 75%;
-  min-width: 150px;
-  max-width: 320px;
+  min-width: 200px;
   border-top: solid 2px var(--red);
   border-right: solid 2px var(--red);
   border-left: solid 2px var(--red);
@@ -200,13 +199,12 @@ nav ul {
 
 nav li {
   display: flex;
+  flex-direction: column;
   padding-top: 15px;
   padding-left: 10px;
   height: 35px;
   width: 80%;
-  min-width: 150px;
-  max-width: 320px;
-  flex-direction: column;
+  min-width: 200px;
   list-style: none;
   align-items: center;
   background: var(--gray);
