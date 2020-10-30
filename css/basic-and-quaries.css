@@ -591,44 +591,6 @@ nav li {
   text-align: center;
 }
 
-/*  Contact 
-------------------------------- */
-.contact {
-  width: 80%;
-  background-color: var(--gray);
-  margin: 40px auto;
-  border-radius: 10px 10px 10px 10px;
-  padding-bottom: 15px;
-}
-
-.contact h1 {
-  width: 40%;
-  margin: 10px auto 25px auto;
-  min-width: 0px;
-  max-width: 250px;
-  text-align: center;
-  padding-top: 10px;
-  border-bottom: solid 2px var(--red);
-  color: var(--blue);
-  font-size: 1.4rem;
-  }
-
-.contact div {
-  display: flex;
-  align-items: center;
-  padding: 5px 0px 10px 15px;
-  font-size: 0.8rem;
-  }
-
-.contact img {
-  padding-right: 15px;
-}
-
-.contact a {
-  color: var(--blue);
-  text-decoration: underline;
-}
-
 
 /* Footer
 ------------------------------- */
@@ -829,7 +791,7 @@ nav a {
   min-width: 80px;
   max-width: 140px;
   background: white;
-  margin: auto ;
+  margin: auto;
   border-radius: 50px 50px 50px 50px;
   border: solid 1px var(--gray);
   font-size: 0.8rem;
@@ -1268,44 +1230,6 @@ nav a {
   font-size: 0.9rem;
   margin-top: 0px;
   text-align: center;
-}
-
-/*  Contact 
-------------------------------- */
-.contact {
-  width: 80%;
-  background-color: var(--gray);
-  margin: 40px auto;
-  border-radius: 10px 10px 10px 10px;
-  padding-bottom: 15px;
-}
-
-.contact h1 {
-  width: 40%;
-  margin: 10px auto 25px auto;
-  min-width: 0px;
-  max-width: 250px;
-  text-align: center;
-  padding-top: 10px;
-  border-bottom: solid 2px var(--red);
-  color: var(--blue);
-  font-size: 1.4rem;
-  }
-
-.contact div {
-  display: flex;
-  align-items: center;
-  padding: 5px 0px 10px 15px;
-  font-size: 0.8rem;
-  }
-
-.contact img {
-  padding-right: 15px;
-}
-
-.contact a {
-  color: var(--blue);
-  text-decoration: underline;
 }
 
 
