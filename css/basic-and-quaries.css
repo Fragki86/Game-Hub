@@ -118,6 +118,12 @@ h2.choose {
 .buy-page-boxes-p {
   display: none;
 }
+.create-account-image {
+  display: none;
+}
+.profile-page-image {
+  display: none;
+}
 
 /* Navigation Menu
 ------------------------------- */

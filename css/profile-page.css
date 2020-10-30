@@ -2,13 +2,20 @@
 .profile-page {
     width: 90%;
     background-color: var(--gray);
-    margin: 30px auto;
+    margin: 20px auto 50px auto;
     border-radius: 10px 10px 10px 10px;
-    padding-bottom: 15px;
+  }
+
+  .profile-page-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10fr;
   }
   
   .profile-page h1 {
     width: 80%;
+    grid-row: 1;
+    grid-column: 1;
     margin: 10px auto 0px auto;
     min-width: 0px;
     max-width: 110px;
@@ -19,8 +26,10 @@
     font-size: 1.4rem;
   }
   
-  .profile-page div {
+  .user-id {
     display: flex;
+    grid-row: 2;
+    grid-column: 1;
     width: 80%;
     padding: 10px 0px 0px 40px;
   }
@@ -40,6 +49,8 @@
   
   .profile-page-form {
     width: 80%;
+    grid-row: 3;
+    grid-column: 1;
     display: grid;
     text-align: left;
     margin: 0px auto 10px auto;
@@ -48,7 +59,7 @@
   
   .profile-page label {
     color: var(--blue);
-    padding: 10px 0px 3px 3px;
+    padding: 5px 0px 3px 3px;
     font-size: 0.7rem;
   }
   
@@ -58,4 +69,13 @@
     box-shadow: 0px 0px 2px #707070;
     border: solid 1px var(--red);
     border-radius: 7px;
+  }
+
+  .profile-page-image {
+    width: 80%;
+    grid-column: 2;
+    grid-row: 1/4;
+    height: 100%;
+    margin: 0px 0px 0px auto;
+    border-radius: 0px 10px 10px 0px;
   }

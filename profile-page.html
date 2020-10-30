@@ -74,27 +74,30 @@
     <!-- Main -->
     <main>
       <section class="profile-page">
-        <h1>Profile</h1>
-        <div>
-          <img src="images/User image.png" alt="users image" class="prof-pic-3"/>
-          <h2>Georgios Fragkias</h2>
+        <div class="profile-page-grid">
+          <h1>Profile</h1>
+          <div class="user-id">
+            <img src="images/User image.png" alt="users image" class="prof-pic-3"/>
+            <h2>Georgios Fragkias</h2>
+          </div>
+          <form method="POST" class="profile-page-form" enctype="multipart/form-data">
+            <label for="user-name">Username</label>
+            <input type="text" name="user-name" id="user-name" placeholder="GeF"/>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="geo.fragkias@gmail.com"/>
+            <label for="language">Language</label>
+            <input type="text" name="language" id="language" placeholder="English, Norwegian, Greek">
+            <label for="country">Country</label>
+            <input type="country" name="country" placeholder="Norway"/>
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" placeholder="Nittedal">
+            <label for="birth-year">Birthday</label>
+            <input type="date" name="birth-year" id="birth-year">
+            <label for="user-rating">User Rating</label>
+            <input type="text" name="user-rating" id="user-rating" placeholder="user-rating">
+          </form>
+          <img src="images/controller-small.png" class="profile-page-image">
         </div>
-        <form method="POST" class="profile-page-form" enctype="multipart/form-data">
-          <label for="user-name">Username</label>
-          <input type="text" name="user-name" id="user-name" placeholder="GeF"/>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="geo.fragkias@gmail.com"/>
-          <label for="language">Language</label>
-          <input type="text" name="language" id="language" placeholder="English, Norwegian, Greek">
-          <label for="country">Country</label>
-          <input type="country" name="country" placeholder="Norway"/>
-          <label for="city">City</label>
-          <input type="text" name="city" id="city" placeholder="Nittedal">
-          <label for="birth-year">Birthday</label>
-          <input type="date" name="birth-year" id="birth-year">
-          <label for="user-rating">User Rating</label>
-          <input type="text" name="user-rating" id="user-rating" placeholder="user-rating">
-        </form>
       </section>
     </main>
     <!-- Footer -->
