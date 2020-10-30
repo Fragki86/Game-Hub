@@ -226,6 +226,10 @@ input:checked + .slider:before {
   display: none;
 }
 
+.favorite-2 {
+  display: none;
+}
+
 .heart{
   z-index: 1;
 }
