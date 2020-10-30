@@ -1,0 +1,19 @@
+.search-results {
+    width: 90%;
+    background-color: var(--gray);
+    margin: 40px auto;
+    border-radius: 10px 10px 10px 10px;
+    padding-bottom: 15px;
+    }
+  
+.search-results h1 {
+    width: 40%;
+    margin: 10px auto 25px auto;
+    min-width: 0px;
+    max-width: 250px;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: solid 2px var(--red);
+    color: var(--blue);
+    font-size: 1.4rem;
+    }

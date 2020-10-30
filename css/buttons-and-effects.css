@@ -81,15 +81,18 @@ button a {
   font-family: "Montserrat", arial;
   font-size: 0.8rem;
   align-items: center;
+  transition: 3s;
 }
 
 .checkout-button:hover {
   background: var(--button-hover);
+  
 }
 
-.button-text-p {
-  text-decoration: none;
+.checkout-button:focus {
+  background: var(--button-success);  
 }
+
 
 /* Sign Up 
 ------------------------------- */

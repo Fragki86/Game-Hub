@@ -1,17 +1,17 @@
 /* --------------------------- Global  Styles --------------------------- */
 :root {
   --red: #7d0712;
-  --background: radial-gradient(#023373, #011a3a);
+  --background: radial-gradient(#021f46, #152131);
   --blue:  #011a3a;
   --light-blue: #adcae3;
   --gray: #d9d7d7;
   --shadow-color: #2A363B;
-  --button-red: linear-gradient(#7d0712, #3f0409);
-  --button-hover: linear-gradient(#DC0015, #3F0409);
+  --button-red: linear-gradient(45deg, #3f0409, #7d0712);
+  --button-hover: linear-gradient(45deg, #3F0409, #DC0015);
+  --button-success: linear-gradient(45deg, #34433A, #269252);
 }
 
 body {
-  width: 100%;
   background: var(--background);
   overflow-x: hidden;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -410,7 +410,7 @@ nav li {
   grid-row: 3 / 9;
   width: 85%;
   color: var(--blue);
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   text-align: left;
   padding-bottom: 20px;
   padding-top: 30px;
@@ -725,7 +725,7 @@ nav {
   display: block;
   width: 100%;
   min-width: 820px;
-  max-width: 1300px;
+  max-width: 1700px;
   background-color: var(--gray);
   border-radius: 50px 50px 50px 50px;
   margin: 0 auto 10px auto;  
@@ -981,7 +981,7 @@ nav a {
 .buy-page-boxes-p {
   width: 90%;
   grid-column: 2;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-top: 0px;
 }
 
@@ -1077,7 +1077,8 @@ nav a {
   grid-row: 2/5;
   width: 85%;
   color: var(--blue);
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 400;
   text-align: left;
   padding-bottom: 20px;
 }

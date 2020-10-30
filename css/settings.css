@@ -24,6 +24,7 @@
     font-weight: 400;
     display: inline-block;
     margin-top: 0px;
+    padding-left: 10px;
     }
   
 .language {
@@ -40,3 +41,14 @@
     grid-column: 1;
     grid-row: 1;
     }
+
+
+@media only screen and (min-width:901px) {
+    .settings {
+        width: 50%;
+        background-color: var(--gray);
+        margin: 40px auto;
+        border-radius: 10px 10px 10px 10px;
+        padding-bottom: 15px;
+        }
+}
