@@ -7,13 +7,32 @@
     }
   
 .search-results h1 {
-    width: 40%;
+    width: 60%;
     margin: 10px auto 25px auto;
     min-width: 0px;
-    max-width: 250px;
+    max-width: 500px;
     text-align: center;
     padding-top: 10px;
     border-bottom: solid 2px var(--red);
     color: var(--blue);
     font-size: 1.4rem;
     }
+
+.search-results span {
+    color: var(--blue);
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 350;
+}
+
+.search-results h2 {
+    color: var(--blue);
+    font-size: 1.1rem;
+}
+
+.search-results-images {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    text-align: center;
+}
