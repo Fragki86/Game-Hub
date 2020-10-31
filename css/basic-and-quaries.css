@@ -686,7 +686,7 @@ p {
 nav {
   display: block;
   width: 100%;
-  min-width: 820px;
+  min-width: 900px;
   max-width: 1700px;
   background-color: var(--gray);
   border-radius: 50px 50px 50px 50px;
