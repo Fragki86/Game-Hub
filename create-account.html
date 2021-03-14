@@ -97,14 +97,18 @@
             <form method="POST" class="create-account-form">
               <label for="full-name">Full Name</label>
               <input type="text" name="full-name" id="full-name" required/>
-              <label for="username">Username</label>
+              <label for="username">Username (minimum 6 characters)</label>
               <input type="text" name="username" id="username" aria-label="insert email address" required/>
+              <div class="form-error" id="usernameError">The username must be at least 6 characters long</div>
               <label for="email">Email</label>
               <input type="email" name="email" id="email" required/>
-              <label for="password">Password</label>
+              <div class="form-error" id="emailError">Please enter a valid Email</div>
+              <label for="password">Password (minimum 8 characters)</label>
               <input type="password" name="password" id="password" required/>
+              <div class="form-error" id="passwordError">The password must be at least 8 characters long</div>
               <label for="repeat-password">Repeat Password</label> 
               <input type="password" name="repeat password" id="repeat-password" required/>
+              <div class="form-error" id="repeat-passwordError">The password does not much</div>
               <label for="country">Country</label>
               <input type="text" name="country" id="country" required/>
               <label for="city">City</label>
@@ -113,7 +117,7 @@
                 <input type="checkbox" name="checkbox-2" id="checkbox-2" class="checkbox-2">
                 <label for="checkbox-2" class="checkbox-2-label">I accept the terms and conditions</label>
               </div>
-              <button type="submit" value="send" class="sign-up-button">Sign Up</button>
+              <button type="submit" value="send" class="sign-up-button" >Sign Up</button>
             </form>
           <img src="images/keyboard-small.png" class="create-account-image" alt="image of a keyboard with red light">
         </div>

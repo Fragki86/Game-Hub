@@ -118,6 +118,12 @@ button a {
   background: var(--button-hover);
 }
 
+.sign-up-button:disabled {
+  background: gray;
+  border: var(--red) solid 1px;
+  cursor: default;
+}
+
 
 /* Put on Sale 
 ------------------------------- */
