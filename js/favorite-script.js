@@ -1,3 +1,9 @@
 const favoriteIcon = document.querySelector(".heart-icon");
 
-addEventListener.onclick("")
+favoriteIcon.addEventListener("click", colourChange);
+
+function colourChange() {
+    favoriteIcon.style.color = "blue";
+
+    favoriteIcon.reset;
+}
