@@ -23,6 +23,7 @@ body a {
 
 header {
   width: 100%;
+  position: sticky;
 }
 
 .logo {
@@ -774,6 +775,10 @@ nav a {
 .message-pic {
   margin-right: 5px;
   cursor: pointer;
+}
+
+.cart {
+  
 }
 
 #messages {

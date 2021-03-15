@@ -94,30 +94,75 @@
       <section class="create-account">
         <div class="create-account-grid">
           <h1>Join us on Game Hub</h1>
+          <div class="succesfull-message" id="accountCreated">Welcome to our community</div>
             <form method="POST" class="create-account-form">
-              <label for="full-name">Full Name</label>
-              <input type="text" name="full-name" id="full-name" required/>
-              <label for="username">Username (minimum 6 characters)</label>
-              <input type="text" name="username" id="username" aria-label="insert email address" required/>
-              <div class="form-error" id="usernameError">The username must be at least 6 characters long</div>
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" required/>
-              <div class="form-error" id="emailError">Please enter a valid Email</div>
-              <label for="password">Password (minimum 8 characters)</label>
-              <input type="password" name="password" id="password" required/>
-              <div class="form-error" id="passwordError">The password must be at least 8 characters long</div>
-              <label for="repeat-password">Repeat Password</label> 
-              <input type="password" name="repeat password" id="repeat-password" required/>
-              <div class="form-error" id="repeat-passwordError">The password does not much</div>
-              <label for="country">Country</label>
-              <input type="text" name="country" id="country" required/>
-              <label for="city">City</label>
-              <input type="text" name="city" id="city" required/>
+              <div>
+                <label>Full Name
+                  <input type="text" name="full-name" id="full-name">
+                </label>
+              </div>
+              <div>
+                <label>Username (minimum 6 characters)
+                  <input type="text" name="username" id="username">
+                </label>
+                <div class="form-error" id="usernameError">The username must be at least 6 characters</div>
+              </div>
+              <div>
+                <label>Email
+                  <input type="email" name="email" id="email">
+                  <div class="form-error" id="emailError">Please enter a valid email address</div>
+                </label>
+              </div>
+              <div>
+                <label>Password (minimum 8 characters)
+                  <input type="password" name="password" id="password">
+                </label>
+                <div class="form-error" id="passwordError">Your password must be at least 8 characters</div>
+              </div>
+              <div>
+                <label>Repeat Password
+                  <input type="password" name="repeat password" id="repeat-password">
+                </label>
+                <div class="form-error" id="repeat-passwordError">The passwords don't match</div>
+              </div>
+              <div>
+                <label>Country
+                  <input type="text" name="country" id="country">
+                </label>
+              </div>
+              <div>
+                <label>City
+                  <input type="text" name="city" id="city">
+                </label>
+              </div>
               <div class="checkbox-2-div">
                 <input type="checkbox" name="checkbox-2" id="checkbox-2" class="checkbox-2">
                 <label for="checkbox-2" class="checkbox-2-label">I accept the terms and conditions</label>
               </div>
-              <button type="submit" value="send" class="sign-up-button" >Sign Up</button>
+              <button type="submit" value="send" class="sign-up-button" disabled>Sign Up</button>
+              <!-- <label for="full-name">Full Name</label>
+                <input type="text" name="full-name" id="full-name" required/>
+                <label for="username">Username (minimum 6 characters)</label>
+                <input type="text" name="username" id="username" aria-label="insert email address" required/>
+                <div class="form-error" id="usernameError">The username must be at least 6 characters long</div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required/>
+                <div class="form-error" id="emailError">Please enter a valid Email</div>
+                <label for="password">Password (minimum 8 characters)</label>
+                <input type="password" name="password" id="password" required/>
+                <div class="form-error" id="passwordError">The password must be at least 8 characters long</div>
+                <label for="repeat-password">Repeat Password</label> 
+                <input type="password" name="repeat password" id="repeat-password" required/>
+                <div class="form-error" id="repeat-passwordError">The password does not much</div>
+                <label for="country">Country</label>
+                <input type="text" name="country" id="country" required/>
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" required/>
+              <div class="checkbox-2-div">
+                <input type="checkbox" name="checkbox-2" id="checkbox-2" class="checkbox-2">
+                <label for="checkbox-2" class="checkbox-2-label">I accept the terms and conditions</label>
+              </div>
+              <button type="submit" value="send" class="sign-up-button" >Sign Up</button> -->
             </form>
           <img src="images/keyboard-small.png" class="create-account-image" alt="image of a keyboard with red light">
         </div>

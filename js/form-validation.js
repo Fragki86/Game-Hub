@@ -16,6 +16,10 @@ const checkBox = document.querySelector("#checkbox-2");
 const button = document.querySelector(".sign-up-button");
 
 formCreateAccount.addEventListener("submit", formValidation);
+userName.addEventListener("keyup", enableButton);
+password.addEventListener("keyup", enableButton);
+email.addEventListener("keyup", enableButton);
+checkBox.addEventListener("onclick", enableButton);
 
 function checkLength (value, letters) {
     if (value.trim().length > letters) {
@@ -32,7 +36,7 @@ function checkEmail (email) {
 }
 
 function enableButton() {
-    if (checkLength(userName.value, 6) && checkLength(password.value, 8) && checkEmail(email.value)) {
+    if (checkLength(userName.value, 5) && checkLength(password.value, 7) && checkEmail(email.value)) {
         button.disabled = true;
     } else {
         button.disabled = false;
@@ -42,13 +46,13 @@ function enableButton() {
 function formValidation(event) {
     event.preventDefault();
 
-    if (checkLength(userName.value, 6) === true) {
+    if (checkLength(userName.value, 5) === true) {
         userNameError.style.display = "none";
     } else {
         userNameError.style.display = "block";
     }
 
-    if (checkLength(password.value, 8) === true) {
+    if (checkLength(password.value, 7) === true) {
         passwordError.style.display = "none";
     } else {
         passwordError.style.display = "block";
@@ -60,11 +64,11 @@ function formValidation(event) {
         emailError.style.display = "block";
     }
 
-    // if (password === repeatPassword) {
-    //     repeatPasswordError.style.display = "block";
-    // } else {
-    //     repeatPasswordError.style.display = "none";
-    // }
+    if (password.value === repeatPassword.value) {
+        repeatPasswordError.style.display = "block";
+    } else {
+        repeatPasswordError.style.display = "none";
+    }
 
     form.reset()
 
