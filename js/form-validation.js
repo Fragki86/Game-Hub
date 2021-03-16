@@ -1,5 +1,6 @@
 const formCreateAccount = document.querySelector(".create-account-form");
 const fullName = document.querySelector("#full-name");
+const fullNameError = document.querySelector("#full-nameError");
 const userName = document.querySelector("#username");
 const userNameError = document.querySelector("#usernameError");
 const email = document.querySelector("#email");
@@ -16,10 +17,7 @@ const checkBox = document.querySelector("#checkbox-2");
 const button = document.querySelector(".sign-up-button");
 
 formCreateAccount.addEventListener("submit", formValidation);
-userName.addEventListener("keyup", enableButton);
-password.addEventListener("keyup", enableButton);
-email.addEventListener("keyup", enableButton);
-checkBox.addEventListener("onclick", enableButton);
+checkBox.addEventListener("click", enableButton);
 
 function checkLength (value, letters) {
     if (value.trim().length > letters) {
@@ -35,13 +33,17 @@ function checkEmail (email) {
     return emailCheck
 }
 
+
+
 function enableButton() {
-    if (checkLength(userName.value, 5) && checkLength(password.value, 7) && checkEmail(email.value)) {
-        button.disabled = true;
-    } else {
+    if (checkBox.checked) {
         button.disabled = false;
+    } else {
+        button.disabled = true;
     }
 }
+
+
 
 function formValidation(event) {
     event.preventDefault();
@@ -65,11 +67,32 @@ function formValidation(event) {
     }
 
     if (password.value === repeatPassword.value) {
-        repeatPasswordError.style.display = "block";
-    } else {
         repeatPasswordError.style.display = "none";
+    } else {
+        repeatPasswordError.style.display = "block";
     }
 
-    form.reset()
+    if (checkLength(fullName.value, 1) === true) {
+        fullNameError.style.display = "none";
+    } else {
+        fullNameError.style.display = "block";
+    }
+
+    if (checkLength(country.value, 1) === true) {
+        countryError.style.display = "none";
+    } else {
+        countryError.style.display = "block";
+    }
+
+    if (checkLength(city.value, 1) === true) {
+        cityError.style.display = "none";
+    } else {
+        cityError.style.display = "block";
+    }
+
+    if (checkLength(userName.value, 5) && checkLength(password.value, 7) && checkEmail(email.value) && password.value === repeatPassword.value && checkLength(fullName.value, 1) && checkLength(country.value, 1) && checkLength(city.value, 1)) {
+        formCreateAccount.reset();
+        button.disabled;
+    }
 
 }

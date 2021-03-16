@@ -80,7 +80,14 @@
 }
 
 #accountCreated {
-  display: none;
-  grid-row: 2/3;
-  grid-column: 1;
+  display: block;
+  position: relative;
+  top: -550px;
+  height: 250px;
+  z-index: 1;
+  border: 1px solid red;
+  background-color: white;
+  width: 60%;
+  margin: auto auto;
+  text-align: center;
 }
