@@ -15,9 +15,12 @@ const city = document.querySelector("#city");
 const cityError = document.querySelector("#cityError");
 const checkBox = document.querySelector("#checkbox-2");
 const button = document.querySelector(".sign-up-button");
+const success = document.querySelector(".succesfull-message");
+
 
 formCreateAccount.addEventListener("submit", formValidation);
 checkBox.addEventListener("click", enableButton);
+
 
 function checkLength (value, letters) {
     if (value.trim().length > letters) {
@@ -27,12 +30,12 @@ function checkLength (value, letters) {
     }
 }
 
+
 function checkEmail (email) {
     const regEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const emailCheck = regEx.test(email);
     return emailCheck
 }
-
 
 
 function enableButton() {
@@ -42,7 +45,6 @@ function enableButton() {
         button.disabled = true;
     }
 }
-
 
 
 function formValidation(event) {
@@ -93,6 +95,9 @@ function formValidation(event) {
     if (checkLength(userName.value, 5) && checkLength(password.value, 7) && checkEmail(email.value) && password.value === repeatPassword.value && checkLength(fullName.value, 1) && checkLength(country.value, 1) && checkLength(city.value, 1)) {
         formCreateAccount.reset();
         button.disabled;
+        success.style.display = "block";
+    }   else {
+        success.style.display = "none";
     }
 
 }
