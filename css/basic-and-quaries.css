@@ -778,7 +778,8 @@ nav a {
 }
 
 .cart {
-  
+  margin-right: 5px;
+  padding-left: 5px; 
 }
 
 #messages {
@@ -793,6 +794,7 @@ nav a {
   display: none;
   position: absolute;
   top: 200px;
+  right: 50px;
   min-width: 80px;
   max-width: 140px;
   background: white;
