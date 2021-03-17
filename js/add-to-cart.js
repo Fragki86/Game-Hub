@@ -2,20 +2,48 @@
 const putInCartButton = document.querySelector(".buy-now");
 const counter = document.querySelector("#counter");
 
-let ClickCounter = 0;
+let ClickCounter = 1;
 
 
-putInCartButton.onclick = function() {
-    
-    
-    ClickCounter += 1;
-    window.localStorage.setItem("totalCount", ClickCounter);
-    let saved = localStorage.getItem("totalCount");
-        
-    counter.innerHTML = saved;
-    counter.style.display = "block";
-    
-    console.log(saved);
-    console.log(ClickCounter);
+putInCartButton.addEventListener("click", save);
+putInCartButton.addEventListener("click", load);
 
+
+function save() {
+    localStorage.setItem("totalCount", ClickCounter);
+    
 }
+
+
+function load() {
+    ClickCounter += 1;
+   let all = localStorage.getItem("totalCount");
+   counter.innerHTML = all;
+   counter.style.display = "block";
+
+   console.log(all);
+}
+
+
+
+
+
+// putInCartButton.onclick = countItems;
+// function countItems() {
+
+//     ClickCounter += 1;
+    
+//     localStorage.setItem("totalCount", ClickCounter);
+    
+//     counter.style.display = "block";
+    
+//     let saved = localStorage.getItem("totalCount");
+
+//     counter.innerHTML = saved;
+
+
+//     console.log(saved);
+//     console.log(ClickCounter);
+// }
+
+
