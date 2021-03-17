@@ -9,5 +9,7 @@ let ClickCounter = 0;
 
 putInCartButton.onclick = function() {
     ClickCounter += 1;
+    console.log(ClickCounter);
     counter.innerHTML = ClickCounter;
+    counter.style.display = "block";
 }
