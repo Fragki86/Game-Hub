@@ -81,7 +81,6 @@ button a {
   font-family: "Montserrat", arial;
   font-size: 0.8rem;
   align-items: center;
-  transition: 3s;
 }
 
 .checkout-button:hover {
@@ -124,6 +123,11 @@ button a {
   cursor: default;
 }
 
+/* Clear cart
+------------------------------- */
+#clear-cart {
+  width: 20%;
+}
 
 /* Put on Sale 
 ------------------------------- */
