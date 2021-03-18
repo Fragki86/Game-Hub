@@ -100,9 +100,39 @@
       <section class="contact">
         <h1>Contact</h1>
         <div>
+          <div class="create-account-form" id="createAccountForm" method="POST">
+            <form>
+              <div>
+                <label>Full Name
+                  <input type="text" name="full-name" id="fullNameContact">
+                </label>
+                <div class="form-error" id="formErrorContact">Required Field</div>
+              </div>
+              <div>
+                <label>Email
+                  <input type="email" name="email" id="emailContact">
+                </label>
+                <div class="form-error" id="emailErrorContact">Please enter a valid email address</div>
+              </div>
+              <div>
+                <label>Subject
+                  <input type="text" name="subject" id="subject">
+                </label>
+                <div class="form-error" id="subjectError">Required field</div>
+              </div>
+              <div>
+                <label>Your message to us (minimum 30 characters)
+                  <textarea name ="users-text" id="usersText"></textarea>
+                </label>
+                <div class="form-error" id="usersTextError">You text should be minimum of 30 characters</div>
+              </div>
+            </form>
+          </div>
+          
+          
           <img src="images/icon-live-chat.png" alt="live chat"/>
           <input type="checkbox" name="chat" id="chat" aria-label="click to chat with us">
-          <label for="chat"><span class="contact-span">Live Chat</span></label>
+          <label for="chat"><span class="contact-span">Contact form</span></label>
           <textarea class="chat-bubble" name="chat-bubble" placeholder="What is your question?"></textarea>
         </div>
         <div>
@@ -132,6 +162,8 @@
         <li><a href="refund-policy.html">Refund Policy</a></li>
       </ul>
     </footer>
-    <script src="../js/local-storage.js"></script>
+    <script src="js/local-storage.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/add-to-cart.js"></script>
   </body>
 </html>
