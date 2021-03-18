@@ -98,30 +98,39 @@
     </header>
     <!-- Main -->
     <main>
+      
       <div class="payment-page">
-        <div class="payment-top-part"></div>
-        <button class="checkout-button" id="clear-cart">Clear Cart</button>
+        <div class="payment-top-part">
+        </div>       
         <div class="payment-main-part">
           <h2 class="h2-pay-ship">Payment and Shipping Information</h2>
-          <form method:="POST" class="form-payment">
+          <form method="POST" class="form-payment">
             <div>
-              <label for="name-on-card">Name on card</label>
-              <input type="text" name="name-on-card" id="name-on-card" class="form-input" required>
+              <label for="name-on-card">Name on card
+              <input type="text" name="name-on-card" id="name-on-card" class="form-input">
+              </label>
+              <div class="form-error" id="name-on-card-error">Required field</div>
             </div>
             <div>
-              <label for="card-number">Card Number</label>
-              <input type="text" name="card-number" id="card-number" class="form-input" required>
+              <label for="card-number">Card Number (16 digits required)
+              <input type="number" name="card-number" id="card-number" class="form-input">
+              </label>
+              <div class="form-error" id="card-number-error">16 numbers required</div>
             </div>
             <div>
-              <label for="expiration-date">Exp. date</label>
-              <input type="date" name="expiration-date" id="expiration-date" class="form-input" required>
+              <label for="expiration-date">Exp. date
+              <input type="month" name="expiration-date" id="expiration-date" class="form-input">
+              </label>
+              <div class="form-error" id="expiration-date-error">Your card is expired</div>
             </div>
             <div>
-              <label for="cvv">CVV</label>
-              <input type="number" name="cvv" id="cvv" class="cvv" min="0" max="999" required>
+              <label for="cvv">CVV
+              <input type="number" name="cvv" id="cvv" class="cvv" min="0" max="999">
+              </label>
+              <div class="form-error" id="cvv-error">Required field</div>
             </div>
             <div>
-              <label>Card type</label>
+              <label>Card type
               <div>
                 <input type="radio" name="card" value="visa" id="visa" class="radio-button"/><label for="visa"><img src="../images/visa.png" alt="visa" class="card-png"></label>
                 <input type="radio" name="card" value="mastercard" id="mastercard" class="radio-button"/><label for="mastercard"><img src="../images/mastercard.png" alt="mastercard" class="card-png"></label>
@@ -130,27 +139,40 @@
                 <input type="radio" name="card" value="american-express" id="american-express" class="radio-button"/><label for="american-express"><img src="../images/american-express.png" alt="american express" class="card-png"></label>
                 <input type="radio" name="card" value="paypal" id="paypal" class="radio-button"/><label for="paypal"><img src="../images/paypal.png" alt="paypal" class="card-png"></label>
               </div>
+              </label>
+              <div class="form-error" id="card-selector-error">Choose a card for payment</div>
             </div>
             <div>
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" class="form-input" required>
+              <label for="email">Email
+              <input type="email" name="email" id="email" class="form-input">
+              </label>
+              <div class="form-error" id="email-error">Enter a valid email</div>
             </div>
             <div>
-              <label for="address">Address</label>
-              <input type="text" name="address" id="address" class="form-input" required>
+              <label for="address">Address
+              <input type="text" name="address" id="address" class="form-input">
+              </label>
+              <div class="form-error" id="address-error">Required field</div>
             </div>
             <div>
-              <label for="city-town">City - Town</label>
-              <input type="text" name="city-town" id="city-town" class="form-input" required>
+              <label for="city-town">City - Town
+              <input type="text" name="city-town" id="city-town" class="form-input">
+              </label>
+              <div class="form-error" id="city-town-error">Required field</div>
             </div>
             <div>
-              <label for="po-code">PO Code</label>
-              <input type="text" name="po-code" id="po-code" class="form-input" required>
+              <label for="po-code">PO Code
+              <input type="number" name="po-code" id="po-code" class="form-input">
+              </label>
+              <div class="form-error" id="po-code-error">Enter a valid PO code</div>
             </div>
             <button class="checkout-button" type="submit" value="send">Check Out</button>
-            <h3 class="h3-price-p">NOK 99,00</h3>
           </form>
         </div>
+      </div>
+      <div class="succesfull-message" id="paymentSuccess">
+        <p>Payment Succesfull</p>
+          <img src="images/green-tick-checkmark.png" id="greenCheckMark">
       </div>
     </main>
     <!-- Footer -->
@@ -168,5 +190,6 @@
     </footer>
     <script src="js/local-storage.js"></script>
     <script src="js/shopping-checkout.js"></script>
+    <script src="js/add-to-cart.js"></script>
   </body>
 </html>

@@ -2,48 +2,28 @@
 const putInCartButton = document.querySelector(".buy-now");
 const counter = document.querySelector("#counter");
 
-let ClickCounter = 1;
+const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+// let ClickCounter = Number(localStorage.getItem("totalCount"));
+counter.innerHTML = cart.length;
+counter.style.display = "block";
 
 
-putInCartButton.addEventListener("click", save);
-putInCartButton.addEventListener("click", load);
 
+putInCartButton.onclick = countItems;
+function countItems() {
 
-function save() {
-    localStorage.setItem("totalCount", ClickCounter);
+    // ClickCounter += 1;
     
+    // localStorage.setItem("totalCount", ClickCounter);
+    
+    
+    cart.push(allGames[0]);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    
+    
+    counter.style.display = "block";
+    counter.innerHTML = cart.length;
 }
-
-
-function load() {
-    ClickCounter += 1;
-   let all = localStorage.getItem("totalCount");
-   counter.innerHTML = all;
-   counter.style.display = "block";
-
-   console.log(all);
-}
-
-
-
-
-
-// putInCartButton.onclick = countItems;
-// function countItems() {
-
-//     ClickCounter += 1;
-    
-//     localStorage.setItem("totalCount", ClickCounter);
-    
-//     counter.style.display = "block";
-    
-//     let saved = localStorage.getItem("totalCount");
-
-//     counter.innerHTML = saved;
-
-
-//     console.log(saved);
-//     console.log(ClickCounter);
-// }
 
 
