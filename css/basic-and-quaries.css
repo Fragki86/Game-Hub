@@ -100,7 +100,7 @@ h2.choose {
 }
 
 /* --------------------------- Mobile  Styles --------------------------- */
-@media only screen and (max-width:900px){
+@media only screen and (max-width:1094px){
 
 /* No Show 
 ------------------------------- */
@@ -593,6 +593,50 @@ nav li {
   text-align: center;
 }
 
+.shopping-checkout-container {
+  margin: 5px auto;
+  border-bottom: 1px solid var(--blue);
+}
+
+
+.shopping-checkout-h1 {
+  font-size: 1rem;
+  color: var(--red);
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.shopping-checkout-img {
+  display: block;
+  width: 60%;
+  align-content: center;
+  margin: 0px auto;
+}
+
+.shopping-checkout-h4 {
+  width: 50%;
+  margin: 0px auto 20px auto;
+  color: var(--red);
+  text-align: center;
+}
+
+.total-amount {
+  font-size: 1.1rem;
+  margin: 5px auto;
+}
+
+#amountSum {
+  font-size: 1.5rem;
+  font-weight: 750;
+  color: var(--red);
+}
+
+#emptyCart {
+  color: var(--red);
+  text-align: center;
+  padding-top: 200px;
+}
 
 /* Footer
 ------------------------------- */
@@ -641,7 +685,7 @@ footer a {
 */
 
 /* --------------------------- Desktop Styles --------------------------- */
-@media only screen and (min-width:901px) {
+@media only screen and (min-width:1095px) {
 /* No Show
 ------------------------------- */
 .search-bar {
@@ -1202,6 +1246,7 @@ nav a {
   width: 90%;
   min-width: 100px;
   max-width: 400px;
+  max-height: 600px;
   text-align: left;
   background-color: var(--light-blue);
   margin: 0px auto 10px auto;
@@ -1253,8 +1298,23 @@ nav a {
   text-align: center;
 }
 
+
+.shopping-checkout-container {
+  margin: 5px auto;
+  border-bottom: 1px solid var(--blue);
+}
+
+
+.shopping-checkout-h1 {
+  font-size: 1rem;
+  color: var(--red);
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
 .shopping-checkout-img {
-  width: 50%;
+  width: 60%;
+  margin: 0px auto;
 }
 
 .shopping-checkout-h4 {
@@ -1263,6 +1323,22 @@ nav a {
   color: var(--red);
 }
 
+.total-amount {
+  font-size: 1.1rem;
+  margin: 5px auto;
+}
+
+#amountSum {
+  font-size: 1.5rem;
+  font-weight: 750;
+  color: var(--red);
+}
+
+#emptyCart {
+  color: var(--red);
+  text-align: center;
+  padding-top: 200px;
+}
 
 
 

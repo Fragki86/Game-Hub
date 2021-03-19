@@ -1,31 +1,33 @@
 /*------------------------   Shopping-cart-page -----------------------------*/
 
 const gameInfo = document.querySelector(".payment-top-part");
+const priceSum = document.querySelector("#amountSum");
+const emptyCart = document.querySelector("#emptyCart");
 const cart = JSON.parse(localStorage.getItem("cart"));
 
-
-
+let sum = 0;
 
 function callGameInfo(){
     for (let i = 0; i < cart.length; i++) {
 
+        let totalPrice = parseFloat(cart[i].price);
+        
+        if (!isNaN(totalPrice)) {
+            sum += totalPrice;
+        }
 
-        // gameInfo.innerHTML = cart[i].title;
-
-        gameInfo.innerHTML += `<div class="shopping-checkout-container>
-                                <h1 class="shopping-checkout-h1">${cart[i].title}</h1><br>
-                                <img class="shopping-checkout-img" src="${cart[i].image}"><br>
+        emptyCart.style.display = "none";
+        gameInfo.innerHTML += `<div class="shopping-checkout-container">
+                                <h1 class="shopping-checkout-h1">${cart[i].title}</h1>
+                                <img class="shopping-checkout-img" src="${cart[i].image}">
                                 <h4 class="shopping-checkout-h4">${cart[i].price}</h4>
-                                <button class="checkout-button" id="clear-cart">Clear Cart</button>
-                                </div>
-                              `
+                                
+                                </div>`
 
+        priceSum.innerHTML = ` ${sum}kr`
     }
 }
-
 callGameInfo()
-
-
 
 
 
@@ -116,7 +118,9 @@ function formValidationPayment(event) {
 }
 
 
-/*------------------------   Payment Form Validation -----------------------------*/
+
+
+/*------------------------   Clear Cart Function -----------------------------*/
 const clearCartButton = document.querySelector("#clear-cart");
 
 clearCartButton.addEventListener("mousedown", clearAll);
@@ -124,6 +128,22 @@ clearCartButton.addEventListener("mousedown", clearAll);
 function clearAll() {
     localStorage.removeItem("cart");
     counter.innerHTML = 0;
-    gameInfo.innerHTML = `<h2 style="padding-top:200px; color:var(--red)">Your shopping cart is empty</h2>`;
-
+    gameInfo.innerHTML = `<h2 id="emptyCart">Your shopping cart is empty</h2>`;
+    priceSum.innerHTML = ` <span id="amountSum">0kr</span>` 
 }
+
+
+
+/*------------------------   Clear Document Function -----------------------------*/
+
+document.addEventListener('mouseup', clear)
+
+function clear() {
+    const clickToRemove = document.querySelector("#paymentSuccess");
+    if (!clickToRemove.contains(clear.target)) {
+        clickToRemove.style.display = 'none';
+    }
+};
+
+
+

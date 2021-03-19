@@ -70,3 +70,16 @@ clickToContactForm.addEventListener("click", openContactForm);
 function openContactForm() {
     contactForm.style.display = "block";
 }
+
+
+
+/*------------------------   Clear Document Function -----------------------------*/
+
+document.addEventListener('mouseup', clear)
+
+function clear() {
+    const clickToRemove = document.querySelector("#messageSent");
+    if (!clickToRemove.contains(clear.target)) {
+        clickToRemove.style.display = 'none';
+    }
+};

@@ -114,6 +114,7 @@ button a {
 }
 
 .sign-up-button:hover {
+  
   background: var(--button-hover);
 }
 

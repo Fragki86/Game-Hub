@@ -101,16 +101,3 @@ function formValidation(event) {
     }
 
 }
-
-
-
-/*------------------------   Clear Document Function -----------------------------*/
-
-document.addEventListener('mouseup', clear)
-
-function clear() {
-    const clickToRemove = document.querySelector("#accountCreated");
-    if (!clickToRemove.contains(clear.target)) {
-        clickToRemove.style.display = 'none';
-    }
-};

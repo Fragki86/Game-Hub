@@ -12,11 +12,6 @@ counter.style.display = "block";
 putInCartButton.onclick = countItems;
 function countItems() {  
     
-    // for (let i = 0; i < allGames.length; i++) {
-
-    //     console.log(allGames[i].id);
-    // }
-
     cart.push(allGames[0]);
     localStorage.setItem("cart", JSON.stringify(cart));
     

@@ -101,8 +101,8 @@
       
       <div class="payment-page">
         <div class="payment-top-part">
-          
-          
+          <h2 id="emptyCart">Your shopping cart is empty</h2>
+          <button class="checkout-button" id="clear-cart">Clear Cart</button>
         </div>       
         
         <div class="payment-main-part">
@@ -170,6 +170,7 @@
               <div class="form-error" id="po-code-error">Enter a valid PO code</div>
             </div>
             <button class="checkout-button" type="submit" value="send">Check Out</button>
+            <div class="total-amount">Total:<span id="amountSum"></span></div>
           </form>
         </div>
       </div>
@@ -193,6 +194,6 @@
     </footer>
     <script src="js/local-storage.js"></script>
     <script src="js/shopping-checkout.js"></script>
-    <script src="js/add-to-cart.js"></script>
+    <script src="js/add-to-cart[0].js"></script>
   </body>
 </html>
