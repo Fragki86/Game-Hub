@@ -1,10 +1,12 @@
 /*------------------------   Add to cart counter -----------------------------*/
 const putInCartButton = document.querySelector(".buy-now");
 const counter = document.querySelector("#counter");
+const counterMobile = document.querySelector("#counter2")
 
 const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 counter.innerHTML = cart.length;
+counterMobile.innerHTML = cart.length;
 counter.style.display = "block";
 
 

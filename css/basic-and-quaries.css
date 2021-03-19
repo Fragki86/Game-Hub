@@ -242,7 +242,7 @@ nav li {
 
 .search-bar-form {
   position: absolute;
-  right: 10px;
+  right: 60px;
   top: 220px;
 }
 
@@ -260,6 +260,27 @@ nav li {
   cursor: pointer;
   font-family: hidden;
 }
+
+.cart {
+  position: absolute;
+  right: 10px;
+  top: 220px;
+}
+
+#counter2{
+  border: 1px solid var(--red);
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  position: absolute;
+  top: 207px;
+  right: 6px;
+  text-align: center;
+  font-weight: 600;
+  z-index: 1;
+}
+
 
 /*  Carousel 
 ------------------------------- */
@@ -635,7 +656,6 @@ nav li {
 #emptyCart {
   color: var(--red);
   text-align: center;
-  padding-top: 200px;
 }
 
 /* Footer
@@ -828,7 +848,6 @@ nav a {
 }
 
 #counter{
-  display: none;
   border: 1px solid var(--red);
   border-radius: 50%;
   height: 25px;

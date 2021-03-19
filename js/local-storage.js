@@ -59,7 +59,6 @@ window.localStorage.setItem("games", JSON.stringify(allGames));
 
 let gameTest = JSON.parse(window.localStorage.getItem("games"));
 
-console.log(gameTest);
 
 
 

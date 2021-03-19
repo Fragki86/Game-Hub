@@ -3,6 +3,7 @@
 const gameInfo = document.querySelector(".payment-top-part");
 const priceSum = document.querySelector("#amountSum");
 const emptyCart = document.querySelector("#emptyCart");
+const buttonDiv = document.querySelector("#buttonDiv");
 const cart = JSON.parse(localStorage.getItem("cart"));
 
 let sum = 0;
@@ -21,10 +22,8 @@ function callGameInfo(){
                                 <h1 class="shopping-checkout-h1">${cart[i].title}</h1>
                                 <img class="shopping-checkout-img" src="${cart[i].image}">
                                 <h4 class="shopping-checkout-h4">${cart[i].price}</h4>
-                                
-                                </div>`
-
-        priceSum.innerHTML = ` ${sum}kr`
+                                </div>`;
+        priceSum.innerHTML = ` ${sum}kr`;
     }
 }
 callGameInfo()
