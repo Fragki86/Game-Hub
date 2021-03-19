@@ -4,21 +4,20 @@ const counter = document.querySelector("#counter");
 
 const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// let ClickCounter = Number(localStorage.getItem("totalCount"));
 counter.innerHTML = cart.length;
 counter.style.display = "block";
 
 
 
 putInCartButton.onclick = countItems;
-function countItems() {
+function countItems() {  
+    
+    // for (let i = 0; i < allGames.length; i++) {
 
-    // ClickCounter += 1;
-    
-    // localStorage.setItem("totalCount", ClickCounter);
-    
-    
-    cart.push(allGames[0]);
+    //     console.log(allGames[i].id);
+    // }
+
+    cart.push(allGames[4]);
     localStorage.setItem("cart", JSON.stringify(cart));
     
     

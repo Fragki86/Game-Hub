@@ -127,6 +127,8 @@ button a {
 ------------------------------- */
 #clear-cart {
   width: 20%;
+  grid-row: 2;
+  
 }
 
 /* Put on Sale 

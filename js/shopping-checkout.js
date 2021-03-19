@@ -1,39 +1,29 @@
 /*------------------------   Shopping-cart-page -----------------------------*/
-// const container = document.querySelector(".payment-top-part");
-// const allGames = document.location.search;
-// const callGames = new URLSearchParams(allGames);
 
-// callGames.get("title")
-
-// console.log(allGames);
-// console.log(callGames);
+const gameInfo = document.querySelector(".payment-top-part");
+const cart = JSON.parse(localStorage.getItem("cart"));
 
 
 
 
-
-// const gameInfo = document.querySelector(".payment-top-part");
-// gameInfo.innerHTML = "";
-
-// function callGameInfo(){
-//     for (let i = 0; i < allGames.length; i++) {
-
-//         const gameTitle = allGames[i].title;
-//         const gamePrice = allGames[i].price;
-//         const gameImg = allGames[i].image;
-
-//         gameInfo.innerHTML += `<h1 class="h1-title-p">${gameTitle}<h1>
-//                                 <img src="${gameImg}">
-//                                 <h3 class="h3-price">${gamePrice}</h3>`
-
-//         console.log(gamePrice);   
+function callGameInfo(){
+    for (let i = 0; i < cart.length; i++) {
 
 
-//     }
-// }
+        // gameInfo.innerHTML = cart[i].title;
 
-// callGameInfo()
+        gameInfo.innerHTML += `<div class="shopping-checkout-container>
+                                <h1 class="shopping-checkout-h1">${cart[i].title}</h1><br>
+                                <img class="shopping-checkout-img" src="${cart[i].image}"><br>
+                                <h4 class="shopping-checkout-h4">${cart[i].price}</h4>
+                                <button class="checkout-button" id="clear-cart">Clear Cart</button>
+                                </div>
+                              `
 
+    }
+}
+
+callGameInfo()
 
 
 
@@ -61,8 +51,6 @@ const checkOutButton = document.querySelector(".checkout-button");
 const success = document.querySelector(".succesfull-message");
 
 formPayment.addEventListener("submit", formValidationPayment);
-// formPayment.addEventListener("submit", (evt) => { console.log("aa"); evt.preventDefault(); })
-
 
 function checkLength (value, letters) {
     if (value.trim().length > letters) {
@@ -136,4 +124,6 @@ clearCartButton.addEventListener("mousedown", clearAll);
 function clearAll() {
     localStorage.removeItem("cart");
     counter.innerHTML = 0;
+    gameInfo.innerHTML = `<h2 style="padding-top:200px; color:var(--red)">Your shopping cart is empty</h2>`;
+
 }
