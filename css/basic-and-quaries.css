@@ -486,6 +486,17 @@ nav li {
   margin-bottom: 0px;
 }
 
+.payment-top-part p {
+  color: var(--blue);
+  display: none;
+  text-align: center;
+}
+
+.payment-top-part a {
+  color: var(--red);
+  font-weight: 600;;
+}
+
 .cart-h1 {
     width: 90%;
     border-radius: 10px 10px 0px 0px;
@@ -658,7 +669,7 @@ nav li {
 
 .shopping-checkout-img {
   display: block;
-  width: 60%;
+  width: 80%;
   align-content: center;
   margin: 0px auto;
 }
@@ -1213,6 +1224,7 @@ nav a {
 
 .payment-top-part p {
   color: var(--blue);
+  display: none;
 }
 
 .payment-top-part a {

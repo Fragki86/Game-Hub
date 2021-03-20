@@ -5,6 +5,7 @@ const priceSum = document.querySelector("#amountSum");
 const emptyCart = document.querySelector("#emptyCart");
 const btnClear = document.querySelector("#clear-cart");
 const removeItem = document.querySelector("#removeItem");
+const clickBaitP = document.querySelector(".payment-top-part p")
 
 const cart = JSON.parse(localStorage.getItem("cart"));
 
@@ -21,6 +22,7 @@ function callGameInfo(){
 
 
         btnClear.style.display = "block";
+        clickBaitP.style.display = "block";
         emptyCart.style.display = "none";
         gameInfo.innerHTML += `<div class="shopping-checkout-container">
                                 <h1 class="shopping-checkout-h1">${cart[i].title}</h1>
@@ -53,8 +55,7 @@ function removeItems() {
             
             delete gamesInCart[gameId];
             localStorage.setItem("cart", JSON.stringify(gamesInCart));
-            console.log("w")
-        };
+        }
     }
 }
 
