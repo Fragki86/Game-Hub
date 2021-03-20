@@ -10,7 +10,6 @@ counter.style.display = "block";
 
 
 putInCartButton.addEventListener("click", countItems);
-putInCartButton.addEventListener("click", refresh);
 
 function countItems() {  
     
@@ -24,9 +23,5 @@ function countItems() {
 }
 
 
-function refresh() {
-    window.location.reload();
-
-}
 
 

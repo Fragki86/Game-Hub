@@ -267,7 +267,22 @@ nav li {
   top: 220px;
 }
 
-#counter2{
+#counter{
+  border: 1px solid var(--red);
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  position: absolute;
+  top: 210px;
+  right: 0px;
+  text-align: center;
+  font-weight: 600;
+  z-index: 1;
+}
+
+
+/* #counter2{
   border: 1px solid var(--red);
   border-radius: 50%;
   height: 25px;
@@ -279,7 +294,7 @@ nav li {
   text-align: center;
   font-weight: 600;
   z-index: 1;
-}
+} */
 
 
 /*  Carousel 
@@ -828,6 +843,8 @@ nav a {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  position: relative;
+  right: 55px;
 }
 
 .profile-name {
@@ -856,6 +873,9 @@ nav a {
 }
 
 .cart {
+  position: absolute;
+  top: 220px;
+  right: 0px;
   margin-right: 5px;
   padding-left: 5px; 
 }
@@ -871,6 +891,7 @@ nav a {
   right: 0px;
   text-align: center;
   font-weight: 600;
+  z-index: 1;
 }
 
 #messages {
