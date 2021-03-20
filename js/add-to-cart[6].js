@@ -8,21 +8,21 @@ counter.innerHTML = cart.length;
 counter.style.display = "block";
 
 
+putInCartButton.addEventListener("click", countItems);
 
-putInCartButton.onclick = countItems;
 function countItems() {  
     
-    // for (let i = 0; i < allGames.length; i++) {
-
-    //     console.log(allGames[i].id);
-    // }
-
     cart.push(allGames[6]);
     localStorage.setItem("cart", JSON.stringify(cart));
     
-    
     counter.style.display = "block";
     counter.innerHTML = cart.length;
+
+    putInCartButton.disabled = true;
+    putInCartButton.textContent = "Already in cart";
+    putInCartButton.style.background = "linear-gradient(45deg, #34433A, #269252)";
+    putInCartButton.style.boxShadow = "0px 0px 5px inset black";
 }
+
 
 
