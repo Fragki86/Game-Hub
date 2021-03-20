@@ -1166,6 +1166,9 @@ nav a {
   /* grid-column: 1;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto; */
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
   gap: 3px;
   width: 50%;
   min-width: 400px;
@@ -1356,7 +1359,7 @@ nav a {
 #emptyCart {
   color: var(--red);
   text-align: center;
-  padding-top: 200px;
+  margin: auto auto;
 }
 
 

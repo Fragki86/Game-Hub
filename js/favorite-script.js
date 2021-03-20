@@ -1,13 +1,17 @@
-const favoriteIcon = document.querySelector(".heart-icon");
+const favoriteIcon = document.querySelector(".heart");
 const heartFull = document.querySelector(".heart-full");
 
-favoriteIcon.addEventListener("click", colourChange);
+favoriteIcon.addEventListener("click", fillUp);
+heartFull.addEventListener("click", fillDown);
 
-function colourChange() {
+
+
+function fillUp() {
     favoriteIcon.style.display = "none";
     heartFull.style.display = "block";
 }
 
-
-// .heart-full {
-//     display: none;
+function fillDown() {
+    favoriteIcon.style.display = "block";
+    heartFull.style.display = "none";
+}

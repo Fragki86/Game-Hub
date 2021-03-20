@@ -128,9 +128,10 @@ button a {
 ------------------------------- */
 #clear-cart {
   width: 20%;
-  grid-row: 2;
   font-size: 1rem;  
   padding: 10px;
+  grid-row: 25;
+  display: none;
 }
 
 /* Put on Sale 
@@ -239,26 +240,27 @@ input:checked + .slider:before {
   display: flex;
 }
 
-#favorite {
+/* #favorite {
   display: none;
-}
+} */
 
-.favorite-2 {
+/* .favorite-2 {
   display: none;
-}
+} */
 
-.heart{
+/* .heart{
   z-index: 1;
-}
+} */
 
 .heart-full {
   display: none;
+  
 }
 
-#favorite:checked ~ .heart-full {
+/* #favorite:checked ~ .heart-full {
   display: block;
   position: absolute;
-}
+} */
 
 
 /* Animations 

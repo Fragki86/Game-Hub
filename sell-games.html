@@ -108,10 +108,18 @@
         <p><span>Hello Georgios,</span></p>
         <p>Fill up the form to put your game on sale.</p>
         <form method="POST" class="sell-game-form" enctype="multipart/form-data">
-          <label for="game-title">Game Title</label>
-          <input type="text" name="game-title" id="game-title">
-          <label for="price">Price</label>
-          <input type="price" name="price" id="price">
+          <div>
+            <label for="game-title">Game Title
+              <input type="text" name="game-title" id="game-title">
+            </label>
+            <div class="form-error" id="game-titleError">Required field</div>
+          </div>
+          <div>
+            <label for="price">Price
+              <input type="number" name="price" id="price">
+            </label>
+            <div class="form-error" id="priceError">Required price (number) in NOK</div>
+          </div>
           <label for="platform">Platform</label>
           <select name="platform" id="platform">
             <option>Choose your platform</option>
@@ -119,15 +127,27 @@
             <option>PC</option>
             <option>Xbox</option>
           </select>
-          <label for="estimated-delivery-date">Estimated delivery date</label>
-          <input type="date" name="estimated delivery date" aria-label="estimated delivery date"/>
-          <label for="description-comments">Description/Comments</label>
-          <textarea name="description/comments" id="description-comments"></textarea>
+          <div>
+            <label for="estimated-delivery-date">Estimated delivery date
+              <input type="date" name="estimated delivery date" id="date" aria-label="estimated delivery date"/>
+            </label>
+            <div class="form-error" id="dateError">Required field</div>
+          </div>
+          <div>
+            <label for="description-comments">Description/Comments (20 characters minimum)
+              <textarea name="description/comments" id="description-comments"></textarea>
+            </label>
+            <div class="form-error" id="description-commentsError">Minimum 20 characters</div>
+          </div>
           <label for="picture">Upload a picture of the game</label>
           <input type="file" name="file" id="file" class="file" aria-label="press to upload a file">
           <button type="submit" value="send" class="put-on-sale-button" aria-label="put item on sale">Put on Sale</button>
         </form>
     </section>
+    <div class="succesfull-message" id="saleSuccess">
+      <p>Your game is on sale</p>
+        <img src="images/green-tick-checkmark.png" id="greenCheckMark">
+    </div>
     </main>
     <!-- Footer -->
     <footer>
