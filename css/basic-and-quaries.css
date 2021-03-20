@@ -466,9 +466,22 @@ nav li {
   grid-template-rows: repeat (3, 1fr);
   width: 90%;
   background: var(--gray);
-  margin: 25px auto 30px auto;
-  border-radius: 10px 10px 0px 0px;
+  margin: 0px auto 30px auto;
+  /* border-radius: 10px 10px 0px 0px; */
   margin-bottom: 0px;
+}
+
+.cart-h1 {
+    width: 90%;
+    border-radius: 10px 10px 0px 0px;
+    margin: 40px auto 0px auto;
+    min-width: 50px;
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom: solid 2px var(--red);
+    color: var(--blue);
+    background-color: var(--gray);
+    font-size: 1.4rem;
 }
 
 .h1-title-p {
@@ -1175,6 +1188,20 @@ nav a {
   text-align: center;
   margin: 25px auto 30px auto;
   border-radius: 10px 10px 10px 10px;
+}
+
+.cart-h1 {
+  display:none;
+  width: 90%;
+  border-radius: 10px 10px 0px 0px;
+  margin: 40px auto 0px auto;
+  min-width: 50px;
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom: solid 2px var(--red);
+  color: var(--blue);
+  background-color: var(--gray);
+  font-size: 1.4rem;
 }
 
 /* .h1-title-p {
