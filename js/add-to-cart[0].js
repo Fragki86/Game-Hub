@@ -9,7 +9,9 @@ counter.style.display = "block";
 
 
 
-putInCartButton.onclick = countItems;
+putInCartButton.addEventListener("click", countItems);
+putInCartButton.addEventListener("click", refresh);
+
 function countItems() {  
     
     cart.push(allGames[0]);
@@ -18,6 +20,13 @@ function countItems() {
     
     counter.style.display = "block";
     counter.innerHTML = cart.length;
+    document.reset();
+}
+
+
+function refresh() {
+    window.location.reload();
+
 }
 
 
