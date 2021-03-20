@@ -1211,6 +1211,15 @@ nav a {
   border-radius: 10px 10px 10px 10px;
 }
 
+.payment-top-part p {
+  color: var(--blue);
+}
+
+.payment-top-part a {
+  color: var(--red);
+  font-weight: 600;;
+}
+
 .cart-h1 {
   display:none;
   width: 90%;

@@ -1,5 +1,5 @@
-const favoriteIcon = document.querySelectorAll(".heart");
-const heartFull = document.querySelectorAll(".heart-full");
+const favoriteIcon = document.querySelector(".heart");
+const heartFull = document.querySelector(".heart-full");
 
 favoriteIcon.addEventListener("click", fillUp);
 heartFull.addEventListener("click", fillDown);
