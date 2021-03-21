@@ -146,9 +146,11 @@ function formValidationPayment(event) {
     if (checkLength(nameOnCard.value, 1) && checkLength(cardNumber.value, 15) && checkEmail(email.value) && checkLength(address.value, 5) && checkLength(cityTown.value, 1) && checkLength(poCode.value, 1)) {
         formPayment.reset();
         success.style.display = "block";
+        clearAll();
     }   else {
         success.style.display = "none";
     }
+
 
 }
 
