@@ -463,6 +463,24 @@ nav li {
   padding-left: 5px;
 }
 
+.p-description {
+  grid-column: 2;
+  grid-row: 3/9;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 20px;
+  margin: 0px auto;
+}
+
+.p-description p {
+  width: 85%;
+  color: var(--blue);
+  font-size: 0.rem;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+
 .h2-price{
   grid-column: 1;
   grid-row: 7;
@@ -1166,11 +1184,17 @@ nav a {
 .p-description {
   grid-column: 2;
   grid-row: 2/5;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 20px;
+  margin: 0px auto;
+}
+
+.p-description p {
   width: 85%;
   color: var(--blue);
   font-size: 0.9rem;
   font-weight: 400;
-  text-align: left;
   padding-bottom: 20px;
 }
 
