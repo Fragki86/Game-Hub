@@ -1,5 +1,5 @@
 const gameListContainer = document.querySelector(".game-list-container");
-const callAPI = "http://georgiosf.no/game-hub-api/wp-json/wc/store/products";
+const callAPI = "https://georgiosf.no/game-hub-api/wp-json/wc/store/products";
 
 async function getGames() {
     try {
