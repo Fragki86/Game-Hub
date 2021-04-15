@@ -4,7 +4,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const gameDetails = "http://georgiosf.no/game-hub-api/wp-json/wc/store/products/" + id;
+const gameDetails = "https://georgiosf.no/game-hub-api/wp-json/wc/store/products/" + id;
 
 console.log(gameDetails);
 
