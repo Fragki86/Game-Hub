@@ -6,12 +6,11 @@ const id = params.get("id");
 
 const gameDetails = "https://georgiosf.no/game-hub-api/wp-json/wc/store/products/" + id;
 
-
 async function getGameDetails() {
     try {
         const response = await fetch(gameDetails);
         const detailedInfo = await response.json();
-
+        console.log(detailedInfo)
         detailsContainer.innerHTML = "";
 
         newDetails(detailedInfo);
@@ -61,7 +60,7 @@ getGameDetails().then(() => {
     function countItems() {  
       cartAPI.push("detailedInfo");
       localStorage.setItem("cartAPI", JSON.stringify(cartAPI));
-      
+      console.log(results);
       counter.style.display = "block";
       counter.innerHTML = cartAPI.length;
   
