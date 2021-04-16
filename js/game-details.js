@@ -6,11 +6,13 @@ const id = params.get("id");
 
 const gameDetails = "https://georgiosf.no/game-hub-api/wp-json/wc/store/products/" + id;
 
+let showInCart = JSON.parse(localStorage.getItem("gamesAPI")) || [];
+
 async function getGameDetails() {
     try {
         const response = await fetch(gameDetails);
         const detailedInfo = await response.json();
-        console.log(detailedInfo)
+        window.localStorage.setItem("gamesAPI", JSON.stringify(detailedInfo));
         detailsContainer.innerHTML = "";
 
         newDetails(detailedInfo);
@@ -49,7 +51,7 @@ getGameDetails().then(() => {
     const counter = document.querySelector("#counter");
   
     const cartAPI = JSON.parse(localStorage.getItem("cartAPI")) || [];
-  
+
     counter.innerHTML = cartAPI.length;
     counter.style.display = "block";
   
@@ -58,9 +60,9 @@ getGameDetails().then(() => {
   
   
     function countItems() {  
-      cartAPI.push("detailedInfo");
+      cartAPI.push(showInCart);
       localStorage.setItem("cartAPI", JSON.stringify(cartAPI));
-      console.log(results);
+      
       counter.style.display = "block";
       counter.innerHTML = cartAPI.length;
   
