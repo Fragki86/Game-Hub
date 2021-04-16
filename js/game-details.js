@@ -6,7 +6,6 @@ const id = params.get("id");
 
 const gameDetails = "https://georgiosf.no/game-hub-api/wp-json/wc/store/products/" + id;
 
-console.log(gameDetails);
 
 async function getGameDetails() {
     try {
@@ -60,11 +59,11 @@ getGameDetails().then(() => {
   
   
     function countItems() {  
-      cartAPI.push(allProducts[i].id);
+      cartAPI.push("detailedInfo");
       localStorage.setItem("cartAPI", JSON.stringify(cartAPI));
       
       counter.style.display = "block";
-      counter.innerHTML = cart.length;
+      counter.innerHTML = cartAPI.length;
   
       putInCartButton.disabled = true;
       putInCartButton.textContent = "Already in cart";

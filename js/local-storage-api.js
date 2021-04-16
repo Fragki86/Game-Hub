@@ -1,13 +1,12 @@
 const callAPI = "http://georgiosf.no/game-hub-api/wp-json/wc/store/products";
 
-let allProducts = window.localStorage.getItem("gamesAPI", JSON.stringify(results));
+
 
 async function getGames() {
     try {
         const response = await fetch(callAPI);
         let results = await response.json();
         window.localStorage.setItem("gamesAPI", JSON.stringify(results));
-
     } catch(error) {
         console.log("Error");
     }
