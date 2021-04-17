@@ -50,9 +50,7 @@ getGameDetails().then(() => {
     const putInCartButton = document.querySelector(".buy-now");
     const counter = document.querySelector("#counter");
   
-  
-    putInCartButton.addEventListener("click", countItems);
-  
+    putInCartButton.addEventListener("click", countItems());
   
     function countItems() {  
       cartAPI.push(showInCart);
