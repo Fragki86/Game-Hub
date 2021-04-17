@@ -7,8 +7,7 @@ heartFull.addEventListener("click", fillDown);
 
 
 function fillUp() {
-    favoriteIcon.style.display = "none";
-    heartFull.style.display = "block";
+    console.log("hahahaha")
 }
 
 function fillDown() {
