@@ -6,6 +6,7 @@ async function getGames() {
         const response = await fetch(callAPI);
         const results = await response.json();
         createList(results);
+        console.log(results);
     } catch(error) {
         console.log("Error");
     }
