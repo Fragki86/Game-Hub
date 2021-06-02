@@ -19,6 +19,8 @@
 
 .join:hover {
     background: var(--button-hover);
+    box-shadow: 0 0 20px var(--red);  
+    color: white;  
 }
 
 button a {
@@ -255,27 +257,12 @@ input:checked + .slider:before {
   display: flex;
 }
 
-/* #favorite {
-  display: none;
-} */
-
-/* .favorite-2 {
-  display: none;
-} */
-
-/* .heart{
-  z-index: 1;
-} */
-
 .heart-full {
   display: none;
   
 }
 
-/* #favorite:checked ~ .heart-full {
-  display: block;
-  position: absolute;
-} */
+
 
 
 /* Animations 

@@ -6,8 +6,8 @@
   --light-blue: #adcae3;
   --gray: #d9d7d7;
   --shadow-color: #2A363B;
-  --button-red: linear-gradient(45deg, #3f0409, #7d0712);
-  --button-hover: linear-gradient(45deg, #3F0409, #DC0015);
+  --button-red: linear-gradient(45deg, #700912, #f71128);
+  --button-hover: linear-gradient(45deg, #412023, #b18186);
   --button-success: linear-gradient(45deg, #34433A, #269252);
 }
 
@@ -123,6 +123,9 @@ h2.choose {
   display: none;
 }
 .profile-page-image {
+  display: none;
+}
+.search-button {
   display: none;
 }
 
@@ -250,21 +253,48 @@ nav li {
   border-radius: 10px;
 }
 
-.search-button {
-  font-size: 22px;
-  border-radius: 100%;
-  border: solid 1px white;
-  padding: 7px 10px;
-  color: #fff;
-  background-color:  var(--red);
-  cursor: pointer;
-  font-family: hidden;
+.search-div-mob {
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 260px;
+  width: 100%;  
+  margin: 0px auto;
+  background-color: var(--gray);
+  box-shadow: 0px 0px 10px black;
+  border: 1px solid var(--red);
+
 }
+
+.search-results-mob a {
+  width: 100%;
+  font-size: 0.9rem;
+  color: var(--red)
+}
+
+.search-results-mob li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+.search-results-mob {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.search-img {
+  width: 30%;
+  image-rendering: auto;
+}
+
 
 .cart {
   position: absolute;
   right: 10px;
-  top: 220px;
+  top: 210px;
 }
 
 #counter{
@@ -274,7 +304,7 @@ nav li {
   width: 25px;
   background-color: white;
   position: absolute;
-  top: 210px;
+  top: 200px;
   right: 0px;
   text-align: center;
   font-weight: 600;
