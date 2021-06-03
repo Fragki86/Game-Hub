@@ -263,7 +263,6 @@ nav li {
   background-color: var(--gray);
   box-shadow: 0px 0px 10px black;
   border: 1px solid var(--red);
-
 }
 
 .search-results-mob a {

@@ -55,11 +55,12 @@
             </label>
           <div class="search-bar">
             <form method="POST" class="search-bar-form">
-              <a href="search-results.html">
-                <input type="search" name="search" id="search" placeholder="Search" aria-label="search form">
-                <button type="submit" class="search-button" aria-label="press to search"><i class="fas fa-search"></i></button>
-              </a>
+                <input type="search" name="search" id="search" placeholder="Search Games" aria-label="search form">
             </form>
+            <div class="search-div-mob">
+              <ul class="search-results-mob">
+              </ul>
+            </div>
           </div>
         <nav id="nav">
           <div class="ctr-panel-2">
@@ -68,20 +69,22 @@
           </div>    
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="buy-games-list.html.html">Buy Games</a></li>
+            <li><a href="buy-games-list.html">Buy Games</a></li>
             <li><a href="sell-games.html">Sell Games</a></li>
             <li><a href="create-account.html">Create Account</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li class="search-bar-form-desktop">
               <form method="POST" action="search-results.html">
-                <a href="search-results.html">
                   <input type="search" name="search" id="search-desktop" placeholder="Search" aria-label="search-form">
-                </a>
-                <button type="submit" class="search-button-desktop" aria-label="press to search"><i class="fas fa-search"></i></button>
+                <button type="button" class="search-button-desktop" aria-label="press to search"><i class="fas fa-search"></i></button>
               </form>
             </li>
             <li class="set"><a href="settings.html">Settings</a></li>
           </ul>
+          <div class="search-div">
+            <ul class="search-results">
+            </ul>
+          </div>
         </nav>
       </section>
     </header>
