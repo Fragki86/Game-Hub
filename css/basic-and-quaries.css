@@ -289,11 +289,25 @@ nav li {
   image-rendering: auto;
 }
 
+.icons{
+  color: white;
+  background-color: var(--red);
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 1.9rem;
+}
 
-.cart {
+#cart {
   position: absolute;
-  right: 10px;
   top: 210px;
+  right: 10px;
+}
+
+#cart i {
+  font-size: 1.5rem;
+  margin-left: 5px;
 }
 
 #counter{
@@ -912,8 +926,6 @@ nav a {
   image-rendering: auto;
 }
 
-
-
 .current {
   text-decoration: underline;
   font-weight: bold;
@@ -947,18 +959,43 @@ nav a {
 
 }
 
-.message-pic {
+#message-pic {
   margin-right: 5px;
   cursor: pointer;
 }
 
-.cart {
-  position: absolute;
-  top: 220px;
-  right: 0px;
-  margin-right: 5px;
-  padding-left: 5px; 
+#message-pic label {
+  margin-left: 6px;
 }
+
+#settings-pic i {
+  margin-left: 6px;
+}
+
+.icons{
+  color: white;
+  background-color: var(--red);
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 1.9rem;
+
+}
+
+#cart {
+  position: absolute;
+  top: 223px;
+  right: 5px;
+  /* margin-right: 5px;
+  padding-left: 5px;  */
+}
+
+#cart i {
+  font-size: 1.6rem;
+  margin-left: 4px;
+}
+
 
 #counter{
   border: 1px solid var(--red);
