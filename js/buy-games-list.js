@@ -1,21 +1,28 @@
 const gameListContainer = document.querySelector(".game-list-container");
 const callAPI = "https://georgiosf.no/game-hub-api/wp-json/wc/store/products";
+const sortThem = document.querySelector(".sort-games")
 
 async function getGames() {
     try {
         const response = await fetch(callAPI);
-        const results = await response.json();
-        createList(results);
-        console.log(results);
+        const games = await response.json();
+        createList(games);
+        // console.log(results);
+
+        return games;
     } catch(error) {
         console.log("Error");
     }
 
 }
 
-getGames();
+getGames().then((games) => {
+    sortThem.addEventListener("change", () => sorting(games))
+});
 
 function createList(games) {
+    gameListContainer.innerHTML= "";
+
     games.forEach(function(individualGame){
         gameListContainer.innerHTML += 
         `<a href="game-details.html?id=${individualGame.id}"><h3 class="titles-h3">${individualGame.name}</h3></a>
@@ -37,6 +44,32 @@ function createList(games) {
                 <div class="buy-page-boxes-p">${individualGame.description}</div>
             </div>`
     })
+}
+
+function sorting(games) {
+        let sortPrice = document.querySelector(".sort-games").value;
+        let int1 = parseInt(a.prices.price);
+        let int2 = parseInt(b.prices.price);
+
+        if (sortPrice === "all-games") {
+            createList(games);
+        } else if (sortPrice === "cheapest") {
+            
+            const ascending = games.sort((a,b) => 
+
+            // let int1 = parseInt(a.prices.price)
+            // console.log(int1)
+            // let int2 = parseInt(b.prices.price);
+            
+            (a.prices.price > b.prices.price) ? 1 : -1);
+            console.log(ascending);
+            createList(ascending);            
+        } else if (sortPrice === "expensive") {
+            const descending = games.sort((a,b) => (a.prices.price < b.prices.price) ? 1 : -1)
+            console.log(descending);
+            createList(descending);
+        }
+        
 }
 
 
