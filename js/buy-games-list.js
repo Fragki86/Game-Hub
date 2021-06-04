@@ -48,26 +48,19 @@ function createList(games) {
 
 function sorting(games) {
         let sortPrice = document.querySelector(".sort-games").value;
-        let int1 = parseInt(a.prices.price);
-        let int2 = parseInt(b.prices.price);
 
         if (sortPrice === "all-games") {
             createList(games);
         } else if (sortPrice === "cheapest") {
-            
-            const ascending = games.sort((a,b) => 
-
-            // let int1 = parseInt(a.prices.price)
-            // console.log(int1)
-            // let int2 = parseInt(b.prices.price);
-            
-            (a.prices.price > b.prices.price) ? 1 : -1);
+            const ascending = games.sort((a,b) => parseInt(a.prices.price) > parseInt(b.prices.price) ? 1 : -1);            
             console.log(ascending);
             createList(ascending);            
         } else if (sortPrice === "expensive") {
-            const descending = games.sort((a,b) => (a.prices.price < b.prices.price) ? 1 : -1)
+            const descending = games.sort((a,b) => parseInt(a.prices.price) < parseInt(b.prices.price) ? 1 : -1)
             console.log(descending);
             createList(descending);
+        } else {
+            createList(games);
         }
         
 }
