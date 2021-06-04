@@ -14,11 +14,11 @@ let sum = 0;
 function callGameInfo(){
     for (let i = 0; i < cart.length; i++) {
 
-        let totalPrice = parseFloat(cart[i].prices.price);
+        // let totalPrice = parseFloat(cart[i].prices.price);
         
-        if (!isNaN(totalPrice)) {
-            sum += totalPrice;
-        }
+        // if (!isNaN(totalPrice)) {
+        //     sum += totalPrice;
+        // }
 
 
         btnClear.style.display = "block";
