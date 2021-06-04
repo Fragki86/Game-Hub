@@ -75,12 +75,22 @@ function openContactForm() {
 
 /*------------------------   Clear Document Function -----------------------------*/
 
+
+document.onclick = function(event) {
+    if (!event.target.closest("#contactForm")) {
+        contactForm.style.display = "none";
+    }
+    if (event.target === clickToContactForm) {
+        contactForm.style.display = "block";
+    }
+}
+
+
 document.addEventListener('mouseup', clear)
 
 function clear() {
     const clickToRemove = document.querySelector("#messageSent");
     if (!clickToRemove.contains(clear.target)) {
         clickToRemove.style.display = "none";
-        contactForm.style.display = "none"
     }
 };

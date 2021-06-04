@@ -5,9 +5,9 @@
   --blue:  #011a3a;
   --light-blue: #adcae3;
   --gray: #d9d7d7;
-  --shadow-color: #2A363B;
-  --button-red: linear-gradient(45deg, #700912, #f71128);
-  --button-hover: linear-gradient(45deg, #412023, #b18186);
+  --shadow-color: #f0e9e8;
+  --button-red: linear-gradient(45deg, #70161e, #d80016);
+  --button-hover: linear-gradient(45deg, #1b0d0e, #9e2330);
   --button-success: linear-gradient(45deg, #34433A, #269252);
 }
 

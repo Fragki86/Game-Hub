@@ -11,7 +11,7 @@
     border-radius: 12px 12px 12px 12px;
     border: none;
     background: var(--button-red);    
-    box-shadow: 0 0 10px var(--shadow-color);
+    box-shadow: 0 0 20px var(--shadow-color);
     text-decoration: none;
     color: var(--gray);
     font: 23px "Montserrat", arial;
@@ -19,7 +19,7 @@
 
 .join:hover {
     background: var(--button-hover);
-    box-shadow: 0 0 20px var(--red);  
+    box-shadow: 0 0px 20px white;  
     color: white;  
 }
 
