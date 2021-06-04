@@ -12,7 +12,7 @@ const cart = JSON.parse(localStorage.getItem("cartAPI"));
 let sum = 0;
 
 function callGameInfo(){
-    for (let i = 0; i < cart.length; i++) {
+    for (let i = 0; i < cartAPI.length; i++) {
 
         // let totalPrice = parseFloat(cart[i].prices.price);
         
@@ -25,9 +25,9 @@ function callGameInfo(){
         clickBaitP.style.display = "block";
         emptyCart.style.display = "none";
         gameInfo.innerHTML += `<div class="shopping-checkout-container">
-                                <h1 class="shopping-checkout-h1">${cart[i].name}</h1>
-                                <img class="shopping-checkout-img" src="${cart[i].images[0].src}">
-                                <h4 class="shopping-checkout-h4">${cart[i].prices.price} ${cart[i].prices.currency_code}</h4>
+                                <h1 class="shopping-checkout-h1">${cartcartAPI[i].name}</h1>
+                                <img class="shopping-checkout-img" src="${cartcartAPI[i].images[0].src}">
+                                <h4 class="shopping-checkout-h4">${cartcartAPI[i].prices.price} ${cartcartAPI[i].prices.currency_code}</h4>
                                 <i class="far fa-times-circle" id="removeItem">
                                 </div>`;
         priceSum.innerHTML = ` ${sum}kr`;
