@@ -6,8 +6,6 @@ const id = params.get("id");
 
 const gameDetails = "https://georgiosf.no/game-hub-api/wp-json/wc/store/products/" + id;
 
-// let showInCart = JSON.parse(localStorage.getItem("gamesAPI")) || [];
-
 async function getGameDetails() {
     try {
         const response = await fetch(gameDetails);

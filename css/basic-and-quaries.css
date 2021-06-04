@@ -393,6 +393,27 @@ nav li {
   height: 44px;
 }
 
+.choose {
+  font-size: 2rem;
+  color: var(--gray);
+  text-align: center;
+}
+
+.sort-games {
+  display: block;
+  margin: 0px auto;
+  width: 20rem;
+  height: 1.3rem;
+  color: var(--red);
+  box-shadow: 0px 0px 5px var(--gray);
+
+}
+
+.sort-games {
+  width: 10rem;
+  height: 2rem;
+}
+
 
 /* Grid Buy Section 
 ------------------------------- */
@@ -529,7 +550,6 @@ nav li {
   width: 90%;
   background: var(--gray);
   margin: 0px auto 30px auto;
-  /* border-radius: 10px 10px 0px 0px; */
   margin-bottom: 0px;
 }
 
@@ -987,8 +1007,6 @@ nav a {
   position: absolute;
   top: 223px;
   right: 5px;
-  /* margin-right: 5px;
-  padding-left: 5px;  */
 }
 
 #cart i {
@@ -1190,9 +1208,37 @@ nav a {
 }
 
 .titles-h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
+
+.choose {
+  font-size: 2rem;
+  color: var(--gray);
+  text-align: center;
+}
+/* .buy-area {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} */
+
+.sort-games {
+  display: block;
+  position: relative;
+  float: right;
+  margin-bottom: 20px;
+  margin-left: 1800px;
+  width: 20rem;
+  height: 1.5rem;
+  color: var(--red);
+  box-shadow: 0px 0px 5px var(--gray);
+
+}
+
+
 
 /* Grid Buy Section
 ------------------------------- */

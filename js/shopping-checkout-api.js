@@ -179,7 +179,7 @@ document.addEventListener('mouseup', clear)
 function clear() {
     const clickToRemove = document.querySelector("#paymentSuccess");
     if (!clickToRemove.contains(clear.target)) {
-        clickToRemove.style.display = 'none';
+        clickToRemove.style.display = "none";
     }
 };
 
