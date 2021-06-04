@@ -14,7 +14,7 @@ let sum = 0;
 function callGameInfo(){
     for (let i = 0; i < cart.length; i++) {
 
-        // console.log(cart[i]);
+        console.log(cart[i]);
         let totalPrice = parseFloat(cart[i].prices.price);
         
         if (!isNaN(totalPrice)) {

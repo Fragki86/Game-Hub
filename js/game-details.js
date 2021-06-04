@@ -6,7 +6,7 @@ const id = params.get("id");
 
 const gameDetails = "https://georgiosf.no/game-hub-api/wp-json/wc/store/products/" + id;
 
-let showInCart = JSON.parse(localStorage.getItem("gamesAPI")) || [];
+// let showInCart = JSON.parse(localStorage.getItem("gamesAPI")) || [];
 
 async function getGameDetails() {
     try {
@@ -14,7 +14,7 @@ async function getGameDetails() {
         const detailedInfo = await response.json();
         window.localStorage.setItem("gamesAPI", JSON.stringify(detailedInfo));
         detailsContainer.innerHTML = "";
-
+        showInCart = detailedInfo;
         newDetails(detailedInfo);
 
     } catch(error) {
@@ -52,7 +52,7 @@ getGameDetails().then(() => {
   
     const cartAPI = JSON.parse(localStorage.getItem("cartAPI")) || [];
   
-  
+    
     putInCartButton.addEventListener("click", countItems);
   
   
