@@ -26,7 +26,7 @@ function callGameInfo(){
         emptyCart.style.display = "none";
         gameInfo.innerHTML += `<div class="shopping-checkout-container">
                                 <h1 class="shopping-checkout-h1">${cart[i].name}</h1>
-                                <img class="shopping-checkout-img" src="${cart[i].images[0].src}">
+                                <img class="shopping-checkout-img" src="${cart[i].images[1].src}">
                                 <h4 class="shopping-checkout-h4">${cart[i].prices.price} ${cart[i].prices.currency_code}</h4>
                                 <i class="far fa-times-circle" id="removeItem">
                                 </div>`;
