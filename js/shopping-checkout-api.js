@@ -26,9 +26,9 @@ function callGameInfo(){
         clickBaitP.style.display = "block";
         emptyCart.style.display = "none";
         gameInfo.innerHTML += `<div class="shopping-checkout-container">
-                                <h1 class="shopping-checkout-h1">${cart[i].name}</h1>
-                                <img class="shopping-checkout-img" src="${cart[i].images[1].src}">
-                                <h4 class="shopping-checkout-h4">${cart[i].prices.price} ${cart[i].prices.currency_code}</h4>
+                                <h1 class="shopping-checkout-h1">${cart[1].name}</h1>
+                                <img class="shopping-checkout-img" src="${cart[1].images[0].src}">
+                                <h4 class="shopping-checkout-h4">${cart[1].prices.price} ${cart[1].prices.currency_code}</h4>
                                 <i class="far fa-times-circle" id="removeItem">
                                 </div>`;
         priceSum.innerHTML = ` ${sum}kr`;
