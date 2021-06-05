@@ -6,6 +6,8 @@ const id = params.get("id");
 
 const gameDetails = "https://georgiosf.no/game-hub-api/wp-json/wc/store/products/" + id;
 
+
+/*------------------------   Fetch results -----------------------------*/
 async function getGameDetails() {
     try {
         const response = await fetch(gameDetails);
@@ -22,7 +24,7 @@ async function getGameDetails() {
 
 
 
-
+/*------------------------   Create new innerHTML for individual product -----------------------------*/
 function newDetails(detailedInfo) {
     detailsContainer.innerHTML +=
     `<div class="grid">
@@ -44,6 +46,8 @@ function newDetails(detailedInfo) {
     </div>`
 }
 
+
+/*------------------------   Putting items in the cart -----------------------------*/
 getGameDetails().then(() => {
     const putInCartButton = document.querySelector(".buy-now");
     const counter = document.querySelector("#counter");

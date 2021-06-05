@@ -10,6 +10,8 @@ const searchMobile = document.querySelector("#search");
 searchInput.addEventListener("input", () => showResults(searchInput.value));
 searchMobile.addEventListener("input", () => showResults(searchMobile.value));
 
+
+/*------------------------   Search function -----------------------------*/
 const showResults = async (checkAll) => {
     try {
         const response = await fetch(searchAPI);

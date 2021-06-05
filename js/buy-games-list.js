@@ -2,12 +2,13 @@ const gameListContainer = document.querySelector(".game-list-container");
 const callAPI = "https://georgiosf.no/game-hub-api/wp-json/wc/store/products";
 const sortThem = document.querySelector(".sort-games")
 
+
+/*------------------------   Fetch Api -----------------------------*/
 async function getGames() {
     try {
         const response = await fetch(callAPI);
         const games = await response.json();
         createList(games);
-        // console.log(results);
 
         return games;
     } catch(error) {
@@ -20,6 +21,8 @@ getGames().then((games) => {
     sortThem.addEventListener("change", () => sorting(games))
 });
 
+
+/*------------------------   Create innerHTML -----------------------------*/
 function createList(games) {
     gameListContainer.innerHTML= "";
 
@@ -46,6 +49,8 @@ function createList(games) {
     })
 }
 
+
+/*------------------------   Sort items -----------------------------*/
 function sorting(games) {
         let sortPrice = document.querySelector(".sort-games").value;
 

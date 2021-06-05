@@ -1,3 +1,4 @@
+/*------------------------   Form Validation -----------------------------*/
 const contactForm = document.querySelector("#contactForm");
 const fullName = document.querySelector("#fullNameContact");
 const fullNameError = document.querySelector("#fullNameErrorContact");
