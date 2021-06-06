@@ -58,16 +58,11 @@ function sorting(games) {
             createList(games);
         } else if (sortPrice === "cheapest") {
             const ascending = games.sort((a,b) => parseInt(a.prices.price) > parseInt(b.prices.price) ? 1 : -1);            
-            console.log(ascending);
             createList(ascending);            
         } else if (sortPrice === "expensive") {
             const descending = games.sort((a,b) => parseInt(a.prices.price) < parseInt(b.prices.price) ? 1 : -1)
-            console.log(descending);
             createList(descending);
-        } else {
-            createList(games);
-        }
-        
+        }        
 }
 
 

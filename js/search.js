@@ -17,8 +17,6 @@ const showResults = async (checkAll) => {
         const response = await fetch(searchAPI);
         const results = await response.json();
 
-        console.log(results);
-
         let gameCheck = results.filter((games) => {
             const regex = new RegExp(`${checkAll}`, "gi");
             return (
@@ -34,10 +32,7 @@ const showResults = async (checkAll) => {
             searchAreaMobile.style.display = "none";
         }
         deliverHTML(gameCheck);
-
-
-
-
+        
     } catch(error) {
         console.log("ERROR")
     }

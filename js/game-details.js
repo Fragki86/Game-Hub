@@ -53,10 +53,8 @@ getGameDetails().then(() => {
     const counter = document.querySelector("#counter");
   
     const cartAPI = JSON.parse(localStorage.getItem("cartAPI")) || [];
-  
     
     putInCartButton.addEventListener("click", countItems);
-  
   
     function countItems() {  
       cartAPI.push(showInCart);
